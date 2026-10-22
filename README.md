@@ -8,7 +8,7 @@ The guide adds ordered navigation, a connected workshop route, on-page sections,
 
 ## For participants
 
-Fork this repository into an account or team organization you control. Follow **[SETUP.md](SETUP.md)** before Challenge 1. Event-provided accounts and bring-your-own setup are explained separately; upstream lab account names are not credentials.
+Use **your own GitHub account** with active GitHub Copilot access and fork this repository into your account or an organization you control. Use **your own Azure subscription** for the Azure challenges. No accounts, subscriptions, or preconfigured lab environments are supplied. Follow **[SETUP.md](SETUP.md)** before Challenge 1.
 
 In your fork, create a Codespace using the single **Agentic SDLC** dev container, or open the root in VS Code Dev Containers. The container installs and builds the default TypeScript API and frontend. Run `cd src` and `make dev`, then open the **private** forwarded port 5137. Local PowerShell-friendly npm commands and alternate API tracks are in the setup guide.
 
@@ -22,7 +22,7 @@ In your fork, create a Codespace using the single **Agentic SDLC** dev container
 | `website/` | Independent Astro static guide, client enhancements, and site tests |
 | `provenance/`, `LICENSE.upstream` | Immutable source manifest, adaptations, original Microsoft MIT notice |
 
-Challenges 1–4 need no Azure resources. Challenges 5–6 require a budgeted subscription and suitable permissions, and may incur charges. Do not use production resources. Read the **[finish and cleanup checklist](challenges/finish.md#clean-up-your-workshop-resources)** before deploying.
+Challenges 1–4 need no Azure resources. Challenges 5–6 use your own Azure subscription and require a budget and suitable permissions; charges are billed to your subscription. Create a dedicated workshop resource group and do not use production resources. Read the **[finish and cleanup checklist](challenges/finish.md#clean-up-your-workshop-resources)** before deploying.
 
 The Azure exercise is **inactive** as `.github/workflows/deploy.yml.example`. Complete and review it before deliberately copying it to `deploy.yml` in your own fork. The only active workflow, `pages.yml`, publishes this static guide and does not provision Azure, create credentials, or complete any exercise.
 

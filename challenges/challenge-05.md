@@ -2,7 +2,7 @@
 
 **[Home](../WORKSHOP.md)** - [Previous Challenge](challenge-04.md) - [Next Challenge](challenge-06.md)
 
-> **Azure costs and permissions.** Stop here until your team has confirmed its subscription, budget, region, dedicated resource group, Contributor access, and an OIDC identity with the required roles. Container Apps, ACR, logs, storage, and the SRE Agent may incur charges. Do not use production resources. Review the [cleanup checklist](finish.md#clean-up-your-workshop-resources) before creating anything.
+> **Use your own Azure subscription.** Confirm that Azure CLI has selected your subscription and that you have a budget, a suitable region, a dedicated workshop resource group, Contributor access, and an OIDC identity configured for your own GitHub fork. No Azure account, subscription, or preconfigured environment is supplied. Container Apps, ACR, logs, storage, and the SRE Agent may incur charges billed to your subscription. Do not use production resources. Review the [setup guidance](../SETUP.md#before-you-deploy-to-azure) and [cleanup checklist](finish.md#clean-up-your-workshop-resources) before creating anything.
 
 ## Goal
 

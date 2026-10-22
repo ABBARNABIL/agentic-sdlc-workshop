@@ -25,12 +25,14 @@ backlog items in the script (and keep it in sync with `assets/backlog.md`).
 ### Prerequisites
 
 - **GitHub CLI** installed — https://cli.github.com/
-- **Authenticated** with `repo` scope — `gh auth login`
+- **Authenticated with your own GitHub account** and `repo` scope — `gh auth login`. Run the scripts against your own fork; no workshop account or pre-seeded repository is supplied.
 
 If `gh` is missing or unauthenticated, the scripts stop with a clear, actionable message before making
 any changes.
 
 ### Usage
+
+Run from your own fork's repository root. In the explicit-target examples, replace `YOUR-USERNAME/YOUR-FORK` with your actual GitHub owner and repository.
 
 **Bash (macOS / Linux):**
 
@@ -38,8 +40,8 @@ any changes.
 # Seed the current repo (the one gh resolves for this directory)
 ./scripts/seed-backlog.sh
 
-# Target a specific team repo or fork
-./scripts/seed-backlog.sh --repo octo-org/team-1
+# Explicitly target your own fork
+./scripts/seed-backlog.sh --repo YOUR-USERNAME/YOUR-FORK
 
 # Preview only — prints what would be created, no API calls
 ./scripts/seed-backlog.sh --dry-run
@@ -51,8 +53,8 @@ any changes.
 # Seed the current repo
 ./scripts/seed-backlog.ps1
 
-# Target a specific team repo or fork
-./scripts/seed-backlog.ps1 -Repo octo-org/team-1
+# Explicitly target your own fork
+./scripts/seed-backlog.ps1 -Repo YOUR-USERNAME/YOUR-FORK
 
 # Preview only — no API calls
 ./scripts/seed-backlog.ps1 -DryRun
@@ -60,10 +62,9 @@ any changes.
 
 > On macOS/Linux you may need to make the script executable first: `chmod +x scripts/seed-backlog.sh`.
 
-### When to run it (event flow)
+### When to run it
 
-- **Pre-event, per team repo/fork.** As part of pre-event repo prep, run the seeder against each team's repo/fork so the backlog is already there
-  when teams reach Challenge 3.
+- **Optionally before Challenge 3.** Seed your own fork if you want to work from GitHub Issues. You can instead choose directly from `assets/backlog.md`; no issue seeding is required.
 - **Do a `--dry-run` first** to confirm the target repo and see the list before creating anything.
 - It's safe to re-run if a repo was missed or you want to top up after manual edits — duplicates are
   skipped by title.

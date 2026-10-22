@@ -6,7 +6,7 @@ Duration: 30 minutes
 
 ## Prerequisites
 
-Complete [Challenge 5](../challenge-05/solution-05.md) — you need a **reachable deployment**. No deploy? Pair with another team or use a shared reference environment so you can still practise the loop. Confirm the **Azure SRE Agent** is available in your region/subscription and accessible to you.
+Complete [Challenge 5](../challenge-05/solution-05.md) — you need a **reachable deployment in your own Azure subscription**. If it is not working, return to Challenge 5 before continuing; no shared reference environment is supplied. Confirm the **Azure SRE Agent** is available in your region/subscription and that your account has the required permissions.
 
 ## Approach
 

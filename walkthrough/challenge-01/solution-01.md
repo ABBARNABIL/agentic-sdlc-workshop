@@ -14,7 +14,7 @@ The aim here is a smooth, fast start — a good setup means the rest of the day 
 
 ### Task 1: Get the code and open an environment
 
-- Open your team's copy of this MicroHack in **GitHub Codespaces** (fastest, nothing to install), a local **VS Code Dev Container**, or locally.
+- Sign in with **your own GitHub account** with active Copilot access and open your own fork in **GitHub Codespaces** (fastest, nothing to install), a local **VS Code Dev Container**, or locally. No accounts or lab credentials are supplied.
 - 💡 If local setup takes more than ~15 minutes, **switch to Codespaces** rather than fighting a local toolchain.
 - Confirm you're on the intended working branch.
 
@@ -31,7 +31,7 @@ The aim here is a smooth, fast start — a good setup means the rest of the day 
 ### Task 4: Run the app locally
 
 - Start the frontend and one API (see `src/README.md` — `make dev` / per-variant targets). Load a page in the browser and confirm the API responds.
-- Pick the API language your team is most comfortable with; the choice doesn't affect the concepts in later challenges.
+- Pick the API language you are most comfortable with; the choice doesn't affect the concepts in later challenges.
 
 ## Optional stretch — repo-wide agent context
 

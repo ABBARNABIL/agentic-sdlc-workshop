@@ -1,12 +1,10 @@
 # Start here
 
-Get a working app and the right permissions before asking an agent to change it. Reading this guide needs no account. Doing the exercises needs your own tools and a repository you can write to.
+Use **your own GitHub account** for the exercises and **your own Azure subscription** for Challenges 5 and 6. No accounts, subscriptions, or preconfigured lab environments are supplied. Reading this guide needs no account.
 
-## Choose your account and fork
+## Use your own accounts
 
-**Self-paced or team setup:** use a GitHub account with an active Copilot seat and fork [ABBARNABIL/agentic-sdlc-workshop](https://github.com/ABBARNABIL/agentic-sdlc-workshop/fork) into an account or organization you control. Clone or open **your fork**, not the upstream MicroHack monorepo. Use a feature branch for the exercises.
-
-**Facilitated event:** use the account, organization, repository name, and Azure scope your facilitator supplies. The original `labuser-0000_ms000000` and `MngEnvMCAP000000` values are event-specific placeholders, not credentials. Do not try to sign in with them or assume you have access to that organization.
+Sign in with **your own GitHub account** with active GitHub Copilot access, then fork [ABBARNABIL/agentic-sdlc-workshop](https://github.com/ABBARNABIL/agentic-sdlc-workshop/fork) into your account or an organization you control. Clone or open **your fork**, not the upstream MicroHack monorepo. Use a feature branch for the exercises. You will configure Azure access for your own subscription when you reach the Azure challenges.
 
 Check the remote before creating issues, pushing code, or configuring OIDC:
 
@@ -23,9 +21,9 @@ The application intentionally has missing features. Building the cart, tests, an
 * **GitHub Copilot:** an active seat with Chat and the agent capabilities you intend to use. Ask your administrator about CLI, MCP, coding-agent, code-review, and agentic-workflow policies; availability varies by plan and organization. A real response about an open source file is the check, not just an installed extension.
 * **An editing environment:** GitHub Codespaces, VS Code with Docker and Dev Containers, or local VS Code and the runtimes below. Codespaces compute and storage can incur charges.
 * **Runtime choices:** Node.js **24** and npm for the frontend and default TypeScript API. For another API, use Python **3.13**, .NET **10**, or Java **17** with Maven. Run only one API at a time; all variants use port **3000**.
-* **For Challenges 5 and 6 only:** a budgeted Azure subscription, a dedicated team resource group, Contributor on the intended scope, the extra roles your SRE Agent requires, supported region/capacity, and a GitHub-to-Azure OIDC federated identity. If you cannot create federated credentials or role assignments, involve your administrator.
+* **For Challenges 5 and 6 only:** your own Azure subscription with a budget, a dedicated workshop resource group you create in it, Contributor on the intended scope, the extra roles your SRE Agent requires, supported region/capacity, and a GitHub-to-Azure OIDC federated identity you configure for your fork. If you cannot create federated credentials or role assignments, involve your administrator.
 
-You can do Challenges 1–4 without Azure. Challenge 6 requires a working Challenge 5 deployment or an explicitly authorized shared reference deployment. Do not mark skipped exercises complete.
+You can do Challenges 1–4 without Azure. Challenge 6 requires your working Challenge 5 deployment in your own Azure subscription. Do not mark skipped exercises complete.
 
 ## Open the development environment
 
@@ -91,7 +89,16 @@ Review `.vscode/mcp.json` before enabling any MCP server. Servers may download t
 
 ## Before you deploy to Azure
 
-Azure Container Apps, Container Registry, Log Analytics, storage, SRE Agent, and supporting services may incur charges. Set a spending budget and agree who will remove the resources. Use a dedicated, non-production resource group. The starter Bicep and workflow are **incomplete teaching scaffolds**, not production defaults.
+Use **your own Azure subscription** and verify that you have the required permissions. Sign in with the Azure account that can access it and explicitly select the subscription before provisioning anything. Replace `YOUR-SUBSCRIPTION-ID` with its actual ID:
+
+```bash
+az login
+az account list --output table
+az account set --subscription "YOUR-SUBSCRIPTION-ID"
+az account show --query "{subscription:name,id:id}" --output table
+```
+
+Azure Container Apps, Container Registry, Log Analytics, storage, SRE Agent, and supporting services may incur charges billed to your subscription. Set a budget and cost alerts, and plan to remove your lab resources afterward. Budgets send alerts; they do not automatically cap spending. Create a dedicated, non-production resource group in your subscription. The starter Bicep and workflow are **incomplete teaching scaffolds**, not production defaults.
 
 The Azure workflow is stored as [`.github/workflows/deploy.yml.example`](.github/workflows/deploy.yml.example), so Actions will not run it. Only the separate Pages workflow is active. Finish and review the exercise workflow **in your own fork**, then copy it to `deploy.yml` when you deliberately opt in. Use your real fork and branch/environment in the OIDC subject; never commit credentials. No Azure provisioning or credential creation is performed by this guide.
 

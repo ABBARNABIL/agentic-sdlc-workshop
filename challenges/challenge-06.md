@@ -6,9 +6,9 @@
 
 Use agents to monitor the deployed Octocat Supply application and improve its reliability, leveraging the **Azure SRE Agent**. Now that the app is deployed, the team wants agentic monitoring — detect, diagnose, and help remediate issues.
 
-> This challenge depends on a reachable deployment from Challenge 5. If your team doesn't have one, pair with another team or use a shared reference deployment so you can still practise the loop.
+> This challenge requires a reachable deployment from Challenge 5 in **your own Azure subscription**. Complete and verify that deployment before continuing; no shared reference environment is supplied.
 
-> Use only a disposable workshop deployment you are authorized to change. Agree the fault, rollback, permissions, and spending limit with your team before testing. Never inject faults into production or someone else's shared environment.
+> Use only your disposable workshop deployment. Confirm the fault, rollback, permissions, and spending limit before testing; coordinate with any collaborators. Never inject faults into production or someone else's environment.
 
 ## Actions
 

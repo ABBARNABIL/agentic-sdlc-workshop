@@ -27,6 +27,28 @@ test('all seven full challenges, seven solutions, setup, finish, and supporting 
   assert.ok(pages.some(page => page.source === 'src/docs/architecture.md'));
 });
 
+test('participants use only their own GitHub accounts and Azure subscriptions', async () => {
+  const pageText = (source: string): string => {
+    const page = pages.find(item => item.source === source);
+    assert.ok(page, source);
+    return clean(load(page.html).text());
+  };
+  assert.match(pageText('SETUP.md'), /your own GitHub account/i);
+  for (const source of [
+    'SETUP.md', 'WORKSHOP.md', 'challenges/challenge-05.md', 'challenges/challenge-06.md',
+    'walkthrough/challenge-05/solution-05.md', 'walkthrough/challenge-06/solution-06.md',
+  ]) {
+    assert.match(pageText(source), /your own Azure subscription/i, source);
+  }
+  const documents = [
+    ...pages.map(page => ({ source: page.source, text: pageText(page.source) })),
+    { source: 'README.md', text: await readFile(path.join(repositoryRoot, 'README.md'), 'utf8') },
+  ];
+  for (const document of documents) {
+    assert.doesNotMatch(document.text, /labuser[-_]\d+|MngEnvMCAP\d+|facilitated event|event-provided accounts|hackathon-provided GitHub/i, document.source);
+  }
+});
+
 test('success checklists contain the original criteria, not optional stretches or unrelated lists', () => {
   const counts = [3, 4, 4, 3, 4, 4, 4];
   for (const page of pages.filter(page => page.kind === 'challenge')) {
@@ -83,7 +105,7 @@ test('all 278 imported files are present and unadapted files keep their original
     '.gitignore', '.devcontainer/devcontainer.json', '.devcontainer/docker-compose.yml',
     '.vscode/tasks.json', '.vscode/launch.json', '.github/workflows/deploy.yml', '.github/copilot-instructions.md',
     'Readme.md', 'src/Makefile', 'src/README.md', 'src/docs/build.md',
-    'src/frontend/vite.config.ts', 'src/frontend/src/api/config.ts', 'infra/README.md',
+    'src/frontend/vite.config.ts', 'src/frontend/src/api/config.ts', 'infra/README.md', 'scripts/README.md',
     ...Array.from({ length: 7 }, (_, i) => `challenges/challenge-0${i + 1}.md`),
     'challenges/finish.md',
     ...Array.from({ length: 7 }, (_, i) => `walkthrough/challenge-0${i + 1}/solution-0${i + 1}.md`),

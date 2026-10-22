@@ -6,7 +6,7 @@ Duration: 60 minutes
 
 ## Prerequisites
 
-Complete [Challenge 4](../challenge-04/solution-04.md). Confirm your **Azure prerequisites**: subscription/budget, Contributor on your scope, a working GitHub ↔ Azure **OIDC federated credential**, and region capacity.
+Complete [Challenge 4](../challenge-04/solution-04.md). Use **your own Azure subscription** and confirm your **Azure prerequisites**: an explicitly selected subscription and budget, Contributor on your workshop resource group, a working GitHub ↔ Azure **OIDC federated credential** configured for your own fork, and region capacity. No Azure account, subscription, or preconfigured identity is supplied.
 
 > Cleanup and re-provisioning below apply only to a dedicated workshop resource group you are authorized to delete. For shared groups, coordinate with the owner instead. Review the [cleanup checklist](../../challenges/finish.md#clean-up-your-workshop-resources) and confirm the active subscription before changing resources.
 

@@ -2,7 +2,7 @@
 
 **[Home](../WORKSHOP.md)** - [Next Challenge](challenge-02.md)
 
-> **Before you start: choose your account and repository.** At a facilitated event, use the account, organization, and fork naming supplied by your facilitator. The upstream names `labuser-0000_ms000000` and `MngEnvMCAP000000` are **event placeholders, not usable credentials**. For self-paced or team use, sign in with your own Copilot-enabled account and fork **ABBARNABIL/agentic-sdlc-workshop** into an account or organization you control. All later commits, issues, pull requests, Actions runs, and OIDC subjects must target **your actual fork**. See [Start here](../SETUP.md).
+> **Before you start: use your own account and fork.** Sign in with **your own GitHub account** with active GitHub Copilot access and fork **ABBARNABIL/agentic-sdlc-workshop** into your account or an organization you control. No accounts or lab credentials are supplied. All later commits, issues, pull requests, Actions runs, and OIDC subjects must target **your actual fork**. For Challenges 5 and 6, you will use **your own Azure subscription** and create your own workshop resources. See [Start here](../SETUP.md).
 >
 > **Standalone Codespaces setup.** In your fork, use **Code → Codespaces → Create codespace on main**. This repository has one root dev container, named **Agentic SDLC**; the upstream monorepo's “Azure / AI / Agentic SDLC” picker is not needed here. The workspace opens at the repository root. Run app commands from `src/`; the `website/` directory builds this guide, not the exercise app.
 
@@ -14,7 +14,7 @@ The Octocat team is behind schedule and adopting Agentic Development practices. 
 
 ## Actions
 
-* **Get the code** — Open your team's copy of this MicroHack in **GitHub Codespaces** (recommended), a local **VS Code Dev Container** (`.devcontainer/`), or locally. Confirm you're on the intended working branch.
+* **Get the code** — Open your own fork of this repository in **GitHub Codespaces** (recommended), a local **VS Code Dev Container** (`.devcontainer/`), or locally. Confirm you're on the intended working branch.
 * **Verify runtimes** — Confirm the runtimes for your chosen API track are available (TypeScript, Python, .NET, or Java) plus Node.js for the frontend. In Codespaces / the Dev Container these are preinstalled.
 * **Enable GitHub Copilot** — Sign in and confirm your Copilot entitlement is active in your IDE; install the GitHub Copilot / Copilot Chat extensions.
 * **Explore the repo** — Review the structure: `src/` (the app, with `src/docs/` architecture guidance), `infra/` + `scripts/` (Azure setup and deployment), `assets/` (Challenge 3 backlog & WorkIQ inputs), and `.github/` (Copilot custom instructions & agents). Identify where the frontend, APIs, and database live. Read `src/README.md` for the code structure and build commands.
@@ -22,7 +22,7 @@ The Octocat team is behind schedule and adopting Agentic Development practices. 
 
 ## Success criteria
 
-* Your team's repo copy is open in your environment and Copilot is active and responding in your IDE.
+* Your own fork is open in your environment under your GitHub account, and Copilot is active and responding in your IDE.
 * You can build and run the frontend and at least one API locally.
 * You can describe, at a high level, how the frontend, APIs, and database fit together.
 

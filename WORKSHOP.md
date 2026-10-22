@@ -10,7 +10,7 @@
 
 ## MicroHack introduction
 
-This MicroHack walks a team through the **Agentic Software Development Lifecycle (SDLC)** — plan, implement, test, review, deploy, and operate with agents — using **GitHub Copilot**, **GitHub Actions**, and **Microsoft Azure**, applied end-to-end to a real full-stack application called **Octocat Supply**.
+This MicroHack walks you through the **Agentic Software Development Lifecycle (SDLC)** — plan, implement, test, review, deploy, and operate with agents — using **GitHub Copilot**, **GitHub Actions**, and **Microsoft Azure**, applied end-to-end to a real full-stack application called **Octocat Supply**.
 
 Rather than treating an AI coding assistant as autocomplete, you practise driving *agents* across the whole lifecycle: refining requirements from organizational signal, planning multi-file changes, generating and hardening tests, reviewing code, deploying to Azure with Infrastructure as Code, monitoring with the Azure SRE Agent, and standing up agentic workflows that maintain the app over time.
 
@@ -45,13 +45,13 @@ This lab is **not** a full explanation of GitHub Copilot or Azure as technologie
 - [Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/)
 - [Azure SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/)
 
-> **What's included.** This MicroHack folder is **self-contained** — everything you need ships with it: the **Octocat Supply** application source ([`src/`](src/README.md)), the Azure infrastructure scaffold ([`infra/`](infra/README.md)), helper [`scripts/`](scripts/README.md), the dev containers ([`.devcontainer/`](.devcontainer/)), the editor config ([`.vscode/`](.vscode/)), and the repo custom instructions, custom agents, and workflows ([`.github/`](.github/)). The Challenge 3 inputs — the product backlog and the mock **WorkIQ** organizational knowledge (Teams thread, support-ticket digest, stakeholder email) — live under [`assets/`](assets/). Facilitators create a copy/fork of this MicroHack per team before the event; participants work in their team's copy.
+> **What's included.** This repository contains the workshop's code and teaching assets: the **Octocat Supply** application source ([`src/`](src/README.md)), the Azure infrastructure scaffold ([`infra/`](infra/README.md)), helper [`scripts/`](scripts/README.md), the dev containers ([`.devcontainer/`](.devcontainer/)), the editor config ([`.vscode/`](.vscode/)), and the repo custom instructions, custom agents, and workflows ([`.github/`](.github/)). The Challenge 3 inputs — the product backlog and the mock **WorkIQ** organizational knowledge (Teams thread, support-ticket digest, stakeholder email) — live under [`assets/`](assets/). Fork the repository using **your own GitHub account** and use **your own Azure subscription** for the Azure challenges. No accounts, subscriptions, or preconfigured lab environments are supplied.
 
 ## MicroHack context
 
 The Octocat team are behind schedule launching their new **Octocat Supply** application and are exploring Agentic Development practices to help them deliver the remaining features before deploying the full application to their Azure environment. Core functionality is still missing — like the shopping cart and other backlog items — and the testing and monitoring aren't yet up to Octocat standards for a reliable, secure application.
 
-You are given the existing application code and access to GitHub tools such as GitHub Copilot, and you complete the work by progressing through the challenges. The app is a full-stack supply chain platform with a **React + Vite + Tailwind** frontend and **four interchangeable API implementations** (TypeScript, C#, Python, Java) over a shared **SQLite** schema — pick whichever API language your team prefers; the challenges are language-agnostic.
+Start from the included application code and use your own GitHub Copilot access to complete the work by progressing through the challenges. The app is a full-stack supply chain platform with a **React + Vite + Tailwind** frontend and **four interchangeable API implementations** (TypeScript, C#, Python, Java) over a shared **SQLite** schema — pick whichever API language you prefer; the challenges are language-agnostic.
 
 ## Objectives
 
@@ -72,16 +72,16 @@ This MicroHack has a few but important prerequisites. Completing them before the
 
 In summary:
 
-- A **GitHub account** with access to your team's copy of this MicroHack repo and an **active GitHub Copilot seat** (Copilot Business/Enterprise, with Chat, agents, CLI, and MCP policies enabled).
+- **Your own GitHub account**, your own fork of this repository, and **active GitHub Copilot access** with the Chat, agent, CLI, and MCP capabilities required for the exercises enabled for your plan.
 - Either **GitHub Codespaces** (recommended — nothing to install) **or** local **VS Code** with the **Dev Container** plus the **GitHub Copilot / Copilot Chat** extensions. The container preinstalls **Node.js 24, Python 3.13, .NET 10, Java 17**.
 - For **Challenges 5 & 6**, **Azure access**:
-  - An **Azure subscription** with budget.
-  - A **Resource Group** for the team.
+  - **Your own Azure subscription** with a budget and cost alerts.
+  - A dedicated **Resource Group** you create for the workshop in that subscription.
   - **Contributor** permissions on that scope (plus any roles the Azure SRE Agent needs on the monitored resources).
-  - A GitHub ↔ Azure **OIDC federated credential** for pipeline authentication.
-  - **Azure SRE Agent** available in the team's region/subscription.
+  - A GitHub ↔ Azure **OIDC federated credential** you configure for your fork's pipeline authentication.
+  - **Azure SRE Agent** available in your selected region and subscription.
 
-> Facilitators: work through the pre-event admin checklist (Copilot enablement, repo access, backlog issue seeding, Azure prerequisites) before running the event.
+> Before you begin, verify your own Copilot access and repository permissions. You can optionally seed backlog issues in your fork. Confirm your Azure subscription, budget, and permissions before Challenge 5; no lab credentials or Azure environment are provided.
 
 ### Challenges
 
