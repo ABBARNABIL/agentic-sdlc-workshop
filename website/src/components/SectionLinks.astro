@@ -1,0 +1,14 @@
+---
+import type { Heading } from '../lib/content';
+interface Props { headings: Heading[] }
+const { headings } = Astro.props;
+---
+<nav aria-label="On this page">
+  <ul class="section-links">
+    {headings.filter(heading => heading.depth <= 3).map(heading => (
+      <li class:list={{ 'subsection': heading.depth === 3 }}>
+        <a href={`#${heading.id}`}>{heading.text}</a>
+      </li>
+    ))}
+  </ul>
+</nav>

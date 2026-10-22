@@ -1,0 +1,2805 @@
+{
+  "sha": "8173c5a2ae5a396662a345e90e4013f5cadae0ac",
+  "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/8173c5a2ae5a396662a345e90e4013f5cadae0ac",
+  "tree": [
+    {
+      "path": ".devcontainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e1fd698fe6c5355498a510cefa866ac02860b55",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/0e1fd698fe6c5355498a510cefa866ac02860b55"
+    },
+    {
+      "path": ".devcontainer/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c306b87341beff00242b9c309c47be207dbe61ff",
+      "size": 193,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c306b87341beff00242b9c309c47be207dbe61ff"
+    },
+    {
+      "path": ".devcontainer/devcontainer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91e97034fd622110bd20ca5dcd1bfb5714702953",
+      "size": 3018,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/91e97034fd622110bd20ca5dcd1bfb5714702953"
+    },
+    {
+      "path": ".devcontainer/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03397d3aef45464da153bfbab2f4fe5d8aa5fc2c",
+      "size": 364,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/03397d3aef45464da153bfbab2f4fe5d8aa5fc2c"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf20f5d3cbf53bb31f9a1d34210bea1e0918f000",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/cf20f5d3cbf53bb31f9a1d34210bea1e0918f000"
+    },
+    {
+      "path": ".github/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ebaed3d74588d7e6c16a3dcaa59c194a91409beb",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/ebaed3d74588d7e6c16a3dcaa59c194a91409beb"
+    },
+    {
+      "path": ".github/agents/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac4cb1a6212babbdf204edb53fa7cf4dc70f7870",
+      "size": 6165,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ac4cb1a6212babbdf204edb53fa7cf4dc70f7870"
+    },
+    {
+      "path": ".github/agents/requirement-refiner.agent.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f99fb08aba731ea770f270657d1e59823fbc490",
+      "size": 7395,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/5f99fb08aba731ea770f270657d1e59823fbc490"
+    },
+    {
+      "path": ".github/copilot-instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f976496f750bc9f418f15003cfddc521cc5f8b6",
+      "size": 3449,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4f976496f750bc9f418f15003cfddc521cc5f8b6"
+    },
+    {
+      "path": ".github/instructions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7477b67612e787b6680e9cbb3b1f5769e3371bd8",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/7477b67612e787b6680e9cbb3b1f5769e3371bd8"
+    },
+    {
+      "path": ".github/instructions/api.instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0947208eb010ddba6ad4f1aac1c719ba84e11c9e",
+      "size": 2648,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0947208eb010ddba6ad4f1aac1c719ba84e11c9e"
+    },
+    {
+      "path": ".github/instructions/database.instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "027063bee14e250f5cac795c5230d402fe6f835a",
+      "size": 2216,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/027063bee14e250f5cac795c5230d402fe6f835a"
+    },
+    {
+      "path": ".github/instructions/frontend.instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "144d5d8a93b9d692589f7c02ab33e3c30fdb2158",
+      "size": 2513,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/144d5d8a93b9d692589f7c02ab33e3c30fdb2158"
+    },
+    {
+      "path": ".github/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02a48dd75b046afcbf59359a1398bdd80719ecdc",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/02a48dd75b046afcbf59359a1398bdd80719ecdc"
+    },
+    {
+      "path": ".github/skills/frontend-design",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7487047a2347f029dc5ebd079ed9767ea2d8c53d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/7487047a2347f029dc5ebd079ed9767ea2d8c53d"
+    },
+    {
+      "path": ".github/skills/frontend-design/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "decdff43d05908b4c1fc2cfd2d80fc5743440934",
+      "size": 8260,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/decdff43d05908b4c1fc2cfd2d80fc5743440934"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2377c663130c3439adcc4e6dc7f188eb27a7a4e",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/a2377c663130c3439adcc4e6dc7f188eb27a7a4e"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "025f7143fa5bc571a51720bf921b5d268a3270c5",
+      "size": 6230,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/025f7143fa5bc571a51720bf921b5d268a3270c5"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d9b66e24d7886c84f1efcdcd1a85e76383ebe36",
+      "size": 1010,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1d9b66e24d7886c84f1efcdcd1a85e76383ebe36"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d0f2eb4d4ab3536aecadeaf586a8b20e901a649",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/8d0f2eb4d4ab3536aecadeaf586a8b20e901a649"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9c94ae4058fc37c38f9f6782586bd48feb88915",
+      "size": 1197,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e9c94ae4058fc37c38f9f6782586bd48feb88915"
+    },
+    {
+      "path": ".vscode/mcp.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a889cd4a97b4ec7562d74f52fb8b9dd504d8b1cf",
+      "size": 747,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a889cd4a97b4ec7562d74f52fb8b9dd504d8b1cf"
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27c7c93199cad9aeb7c0fe4986dacb4b70ddac1d",
+      "size": 1044,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/27c7c93199cad9aeb7c0fe4986dacb4b70ddac1d"
+    },
+    {
+      "path": "Readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5106fa29535b821caaad8cbaee8545428803537",
+      "size": 7603,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f5106fa29535b821caaad8cbaee8545428803537"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad4cd53b64bd28f28ed1517b1ccb150e64f939b0",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/ad4cd53b64bd28f28ed1517b1ccb150e64f939b0"
+    },
+    {
+      "path": "assets/backlog.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6935ad78fc33746d0ef42e74ff9c098070bcdee2",
+      "size": 7541,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/6935ad78fc33746d0ef42e74ff9c098070bcdee2"
+    },
+    {
+      "path": "assets/workiq",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99206e5f8dc5b55c2165a63a963595d1b2b53681",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/99206e5f8dc5b55c2165a63a963595d1b2b53681"
+    },
+    {
+      "path": "assets/workiq/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06dc2f8f455a3bf12971ad8cbfa4088da8f79272",
+      "size": 2215,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/06dc2f8f455a3bf12971ad8cbfa4088da8f79272"
+    },
+    {
+      "path": "assets/workiq/stakeholder-email-launch-priorities.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1be3eaeef2d60302c11a15efc96c2d5b6c768b50",
+      "size": 2112,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1be3eaeef2d60302c11a15efc96c2d5b6c768b50"
+    },
+    {
+      "path": "assets/workiq/support-tickets-digest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b300deeb694c116d81764457d11b3aa760c9fcb",
+      "size": 2259,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2b300deeb694c116d81764457d11b3aa760c9fcb"
+    },
+    {
+      "path": "assets/workiq/teams-thread-launch-promo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c6cab0bec93cf4ad5b617afb24a2cc374535684",
+      "size": 3677,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9c6cab0bec93cf4ad5b617afb24a2cc374535684"
+    },
+    {
+      "path": "challenges",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e711951bd5731699cd626b2c372dedfa644c525e",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/e711951bd5731699cd626b2c372dedfa644c525e"
+    },
+    {
+      "path": "challenges/challenge-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6d28f75a379b9ec3feb1df0e73af4e50078d0f9",
+      "size": 3870,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e6d28f75a379b9ec3feb1df0e73af4e50078d0f9"
+    },
+    {
+      "path": "challenges/challenge-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6446627e205afc31262e75027d63f22b3abdff3",
+      "size": 2513,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a6446627e205afc31262e75027d63f22b3abdff3"
+    },
+    {
+      "path": "challenges/challenge-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae3e8ed416b488d81ae42f9380218e40d599ff79",
+      "size": 3114,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ae3e8ed416b488d81ae42f9380218e40d599ff79"
+    },
+    {
+      "path": "challenges/challenge-04.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09decdb2395bbc8734d59a68606edc761f47979a",
+      "size": 2393,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/09decdb2395bbc8734d59a68606edc761f47979a"
+    },
+    {
+      "path": "challenges/challenge-05.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4282d8b2907289312318a99f9d48d4126615cbd6",
+      "size": 2652,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4282d8b2907289312318a99f9d48d4126615cbd6"
+    },
+    {
+      "path": "challenges/challenge-06.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ae866ec9326c62edf21a24584a786b75907e0de",
+      "size": 2006,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0ae866ec9326c62edf21a24584a786b75907e0de"
+    },
+    {
+      "path": "challenges/challenge-07.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7288a4ce7f409ccf33942974bb8c5a607ab49dcd",
+      "size": 2242,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7288a4ce7f409ccf33942974bb8c5a607ab49dcd"
+    },
+    {
+      "path": "challenges/finish.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac69c1658393e709021e5c27bf741b34aa43cedb",
+      "size": 1040,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ac69c1658393e709021e5c27bf741b34aa43cedb"
+    },
+    {
+      "path": "infra",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b484f7502534b409cedde0605b1565f4db956392",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/b484f7502534b409cedde0605b1565f4db956392"
+    },
+    {
+      "path": "infra/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6a740971d812016ca262b372d6c93bb58044958",
+      "size": 7520,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f6a740971d812016ca262b372d6c93bb58044958"
+    },
+    {
+      "path": "infra/main.bicep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b75d3da04219b5188e887fbd99de9c38717dd1b5",
+      "size": 7936,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b75d3da04219b5188e887fbd99de9c38717dd1b5"
+    },
+    {
+      "path": "infra/main.parameters.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b334a58173128c93c477c291e275acb46667cf0",
+      "size": 1272,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8b334a58173128c93c477c291e275acb46667cf0"
+    },
+    {
+      "path": "infra/modules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b1d662a05adbaa0af3362c667358ea01a1f2a42",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/2b1d662a05adbaa0af3362c667358ea01a1f2a42"
+    },
+    {
+      "path": "infra/modules/containerapp-env.bicep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83334ee6ae55bbe40989bad839634315d05db0ab",
+      "size": 2116,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/83334ee6ae55bbe40989bad839634315d05db0ab"
+    },
+    {
+      "path": "infra/modules/containerapp.bicep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bae5bab8e665d197017bdd632da33d35914c61d1",
+      "size": 5436,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bae5bab8e665d197017bdd632da33d35914c61d1"
+    },
+    {
+      "path": "infra/modules/loganalytics.bicep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e7471a526dd27cc44a784c31de598c410583b64",
+      "size": 1555,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/5e7471a526dd27cc44a784c31de598c410583b64"
+    },
+    {
+      "path": "infra/modules/registry.bicep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acb6f7a05d1ddf57aba3e4d70cfe12e85e3ae54",
+      "size": 2153,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7acb6f7a05d1ddf57aba3e4d70cfe12e85e3ae54"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9af8a60ebfe2916de0f5902e302d98c0fa8a9e77",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/9af8a60ebfe2916de0f5902e302d98c0fa8a9e77"
+    },
+    {
+      "path": "scripts/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbb1f4ba64289268bb9caa7063602e60cbf2d7a7",
+      "size": 2621,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/fbb1f4ba64289268bb9caa7063602e60cbf2d7a7"
+    },
+    {
+      "path": "scripts/seed-backlog.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c6258d3132dc7ced505d85b7fed43ab46cccb0f",
+      "size": 11696,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3c6258d3132dc7ced505d85b7fed43ab46cccb0f"
+    },
+    {
+      "path": "scripts/seed-backlog.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83a137700eec979d77061c14638cf34030b67f91",
+      "size": 12107,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/83a137700eec979d77061c14638cf34030b67f91"
+    },
+    {
+      "path": "scripts/setup-oidc.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f599e357807a05dccd49627284f111eeae4adea2",
+      "size": 7675,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f599e357807a05dccd49627284f111eeae4adea2"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e9bcb737e781a7e339044bf210ee3ad89806b7f",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/0e9bcb737e781a7e339044bf210ee3ad89806b7f"
+    },
+    {
+      "path": "src/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a613e99ec034959161abb24f8212449fb644fc5",
+      "size": 9202,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8a613e99ec034959161abb24f8212449fb644fc5"
+    },
+    {
+      "path": "src/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4fec9f548aa55e8c4682cae9a1bb2fece8d35ea",
+      "size": 4203,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d4fec9f548aa55e8c4682cae9a1bb2fece8d35ea"
+    },
+    {
+      "path": "src/api-cs-tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c27628783d1faf433b6c000b48f21eef590110ed",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/c27628783d1faf433b6c000b48f21eef590110ed"
+    },
+    {
+      "path": "src/api-cs-tests/OctoSupply.Api.Tests.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad24dd4959858ec0639aed1409470034f03d80a7",
+      "size": 744,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ad24dd4959858ec0639aed1409470034f03d80a7"
+    },
+    {
+      "path": "src/api-cs-tests/Repositories",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "014bcaee076dc42987d4cba65a34950d91430202",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/014bcaee076dc42987d4cba65a34950d91430202"
+    },
+    {
+      "path": "src/api-cs-tests/Repositories/SuppliersRepositoryTests.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c96f9fc2496bc45c0507dfe7851b98d164ef6bdd",
+      "size": 3371,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c96f9fc2496bc45c0507dfe7851b98d164ef6bdd"
+    },
+    {
+      "path": "src/api-cs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c7860d5b0a85647e5307c19d50b9fe88d136354",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/7c7860d5b0a85647e5307c19d50b9fe88d136354"
+    },
+    {
+      "path": "src/api-cs/Controllers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2dc208d8f996643cf175dc90c1da3108e0c5f2f",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/a2dc208d8f996643cf175dc90c1da3108e0c5f2f"
+    },
+    {
+      "path": "src/api-cs/Controllers/BranchesController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc85020c47c92c37bdaf97d029957716956a81e8",
+      "size": 1489,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bc85020c47c92c37bdaf97d029957716956a81e8"
+    },
+    {
+      "path": "src/api-cs/Controllers/DeliveriesController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "179626301a46bf4168817cdfa1384fad9d2665e8",
+      "size": 2419,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/179626301a46bf4168817cdfa1384fad9d2665e8"
+    },
+    {
+      "path": "src/api-cs/Controllers/HeadquartersController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd2860412a06f28096a7970fab3f750ff293fffb",
+      "size": 2067,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bd2860412a06f28096a7970fab3f750ff293fffb"
+    },
+    {
+      "path": "src/api-cs/Controllers/OrderDetailDeliveriesController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc60df3629dcd5720cd6ab7da6aabea1ca122d66",
+      "size": 1686,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bc60df3629dcd5720cd6ab7da6aabea1ca122d66"
+    },
+    {
+      "path": "src/api-cs/Controllers/OrderDetailsController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79ced50b5c502c93d0efe2464266d939a06e7e6a",
+      "size": 1571,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/79ced50b5c502c93d0efe2464266d939a06e7e6a"
+    },
+    {
+      "path": "src/api-cs/Controllers/OrdersController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb3069cd2cefce4b05454575a5d08abf7d54a8f1",
+      "size": 1596,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bb3069cd2cefce4b05454575a5d08abf7d54a8f1"
+    },
+    {
+      "path": "src/api-cs/Controllers/ProductsController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66d886298443abf8375036e4e4c29716e318b2df",
+      "size": 1497,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/66d886298443abf8375036e4e4c29716e318b2df"
+    },
+    {
+      "path": "src/api-cs/Controllers/SuppliersController.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c567d9ec26de6a75ad8a2dc2a8700e95f0326970",
+      "size": 1924,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c567d9ec26de6a75ad8a2dc2a8700e95f0326970"
+    },
+    {
+      "path": "src/api-cs/Data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7834c6317132215eba9fe1c177c417e887783cb4",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/7834c6317132215eba9fe1c177c417e887783cb4"
+    },
+    {
+      "path": "src/api-cs/Data/DatabaseMigrator.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfcac519ef2cf5ba1784f8a32048c90922c3c168",
+      "size": 5708,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bfcac519ef2cf5ba1784f8a32048c90922c3c168"
+    },
+    {
+      "path": "src/api-cs/Data/SqliteConnectionFactory.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26a65bb1607a215c857ba075936bf55cd20b0666",
+      "size": 1330,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/26a65bb1607a215c857ba075936bf55cd20b0666"
+    },
+    {
+      "path": "src/api-cs/Models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75a960e5c53aba56470c835e8d1b8021fef169a0",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/75a960e5c53aba56470c835e8d1b8021fef169a0"
+    },
+    {
+      "path": "src/api-cs/Models/Branch.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02001ad6fe9e71518c4a9b106667e60685fabe9f",
+      "size": 926,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/02001ad6fe9e71518c4a9b106667e60685fabe9f"
+    },
+    {
+      "path": "src/api-cs/Models/Delivery.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d97efad87b00ac32dcff12dee3ff328250af9287",
+      "size": 747,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d97efad87b00ac32dcff12dee3ff328250af9287"
+    },
+    {
+      "path": "src/api-cs/Models/Headquarters.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8b00b6653e20feb3697e10d5c266a60946bf11",
+      "size": 837,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3c8b00b6653e20feb3697e10d5c266a60946bf11"
+    },
+    {
+      "path": "src/api-cs/Models/Order.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb06c9fa05e6be908f64643f674fce80e5c616da",
+      "size": 720,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bb06c9fa05e6be908f64643f674fce80e5c616da"
+    },
+    {
+      "path": "src/api-cs/Models/OrderDetail.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00295ee1a4c2e7fa1736bf1760a33c792393bb2",
+      "size": 681,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e00295ee1a4c2e7fa1736bf1760a33c792393bb2"
+    },
+    {
+      "path": "src/api-cs/Models/OrderDetailDelivery.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea182346c54a943931b8a16c1af032fe54b6358c",
+      "size": 627,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ea182346c54a943931b8a16c1af032fe54b6358c"
+    },
+    {
+      "path": "src/api-cs/Models/Product.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e57b857a73e852a34082d000809ae6c547e13754",
+      "size": 1015,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e57b857a73e852a34082d000809ae6c547e13754"
+    },
+    {
+      "path": "src/api-cs/Models/Supplier.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "122db2a5291bb28999cdaa412bac81cc6b63b8b5",
+      "size": 925,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/122db2a5291bb28999cdaa412bac81cc6b63b8b5"
+    },
+    {
+      "path": "src/api-cs/OctoSupply.Api.csproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0578db242a0c337ac45d7a9869a1d80d636a81f7",
+      "size": 494,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0578db242a0c337ac45d7a9869a1d80d636a81f7"
+    },
+    {
+      "path": "src/api-cs/Program.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "807efcf058942ee4cb8caa0c14efc54de55485c9",
+      "size": 2281,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/807efcf058942ee4cb8caa0c14efc54de55485c9"
+    },
+    {
+      "path": "src/api-cs/Properties",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "099414010eb6b1dc4e3bfb2a3e6e9248311e25cc",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/099414010eb6b1dc4e3bfb2a3e6e9248311e25cc"
+    },
+    {
+      "path": "src/api-cs/Properties/launchSettings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d527fea1199bd6c666242474a849d06337b76c",
+      "size": 621,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c8d527fea1199bd6c666242474a849d06337b76c"
+    },
+    {
+      "path": "src/api-cs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ac73573f7ac5dc452d4affce36f72a63e1d374e",
+      "size": 590,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1ac73573f7ac5dc452d4affce36f72a63e1d374e"
+    },
+    {
+      "path": "src/api-cs/Repositories",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ac42f8adfb5d7b114b2f692e7b0934dcf3bf9f1",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/1ac42f8adfb5d7b114b2f692e7b0934dcf3bf9f1"
+    },
+    {
+      "path": "src/api-cs/Repositories/BranchesRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b915a11c9664775ae7323c16e17461503f65bb40",
+      "size": 5855,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b915a11c9664775ae7323c16e17461503f65bb40"
+    },
+    {
+      "path": "src/api-cs/Repositories/DeliveriesRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed1837cf84191280f762ef23c2326ce082e9bcde",
+      "size": 5985,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ed1837cf84191280f762ef23c2326ce082e9bcde"
+    },
+    {
+      "path": "src/api-cs/Repositories/HeadquartersRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fcd6c0fee99680236bba0daf56d33f726b98aa3",
+      "size": 6199,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2fcd6c0fee99680236bba0daf56d33f726b98aa3"
+    },
+    {
+      "path": "src/api-cs/Repositories/OrderDetailDeliveriesRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c592f5fe6b773668db4ad27dbeb722ac4c93aa8",
+      "size": 5248,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8c592f5fe6b773668db4ad27dbeb722ac4c93aa8"
+    },
+    {
+      "path": "src/api-cs/Repositories/OrderDetailsRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "276def5f6c2424bf7715d2bc10e395cc131c00db",
+      "size": 5288,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/276def5f6c2424bf7715d2bc10e395cc131c00db"
+    },
+    {
+      "path": "src/api-cs/Repositories/OrdersRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "846c4f4a1321fea2684dd723a09de2384faff03e",
+      "size": 5124,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/846c4f4a1321fea2684dd723a09de2384faff03e"
+    },
+    {
+      "path": "src/api-cs/Repositories/ProductsRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc1b795d217e10b5da143efba505d92b1f303e5e",
+      "size": 6007,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/fc1b795d217e10b5da143efba505d92b1f303e5e"
+    },
+    {
+      "path": "src/api-cs/Repositories/SuppliersRepository.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d583a7a14f3233388e59b23f0c6116c16bcfd3e5",
+      "size": 5833,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d583a7a14f3233388e59b23f0c6116c16bcfd3e5"
+    },
+    {
+      "path": "src/api-cs/Utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87a30760a4b644a41f6cf11f47a2eba1fdb76461",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/87a30760a4b644a41f6cf11f47a2eba1fdb76461"
+    },
+    {
+      "path": "src/api-cs/Utils/ApiExceptions.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d10a420c3609dcdbd30b718041196ce779d6a475",
+      "size": 1134,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d10a420c3609dcdbd30b718041196ce779d6a475"
+    },
+    {
+      "path": "src/api-cs/Utils/ErrorHandlingMiddleware.cs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1503683a83d96988ddb060818b1d1788c640721",
+      "size": 1442,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a1503683a83d96988ddb060818b1d1788c640721"
+    },
+    {
+      "path": "src/api-cs/appsettings.Development.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c208ae9181e5e5717e47ec1bd59368aebc6066e",
+      "size": 119,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0c208ae9181e5e5717e47ec1bd59368aebc6066e"
+    },
+    {
+      "path": "src/api-cs/appsettings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fd54cadfa59d3af7fcc42a86791d9c97911514f",
+      "size": 195,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8fd54cadfa59d3af7fcc42a86791d9c97911514f"
+    },
+    {
+      "path": "src/api-java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "852c57ff9db553b25e0f55626929fe58db2e48c7",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/852c57ff9db553b25e0f55626929fe58db2e48c7"
+    },
+    {
+      "path": "src/api-java/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108261b9d520dd0fd81e781b6414e83c231e7ff1",
+      "size": 614,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/108261b9d520dd0fd81e781b6414e83c231e7ff1"
+    },
+    {
+      "path": "src/api-java/pom.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07c63e7e0c6ee041ca058394083f6187fe64a5cc",
+      "size": 1939,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/07c63e7e0c6ee041ca058394083f6187fe64a5cc"
+    },
+    {
+      "path": "src/api-java/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a7d6bc8f94e387b22b6e5ace524dd45da2f637d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/6a7d6bc8f94e387b22b6e5ace524dd45da2f637d"
+    },
+    {
+      "path": "src/api-java/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f6fd579fda6864d93e24a0c2569af4e4674ef0af",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f6fd579fda6864d93e24a0c2569af4e4674ef0af"
+    },
+    {
+      "path": "src/api-java/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4201ad620009545e56d80d53dc212a50e9fa42d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f4201ad620009545e56d80d53dc212a50e9fa42d"
+    },
+    {
+      "path": "src/api-java/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b07c1ce1f53ae1833387642ef5c5b56f54184df7",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/b07c1ce1f53ae1833387642ef5c5b56f54184df7"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80f8e1e93d06504e088d0d05dfe9d8a9dba105d1",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/80f8e1e93d06504e088d0d05dfe9d8a9dba105d1"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2d2ad922b3ca5585c080b963d73c4336e560478",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/c2d2ad922b3ca5585c080b963d73c4336e560478"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/Application.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de80bd8a4fac26b4bc2c200907ba655d20a98212",
+      "size": 309,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/de80bd8a4fac26b4bc2c200907ba655d20a98212"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30cf90f9fe3577b6d73ca21356b4b1c62a17fc70",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/30cf90f9fe3577b6d73ca21356b4b1c62a17fc70"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/config/DatabaseConfig.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "589472a785cdf373437a4a67e3b6e4ed6c2a7d8e",
+      "size": 1249,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/589472a785cdf373437a4a67e3b6e4ed6c2a7d8e"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/config/DatabaseInitializer.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35c8e1587e0168882a3fedb723d949facdc5e70b",
+      "size": 6063,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/35c8e1587e0168882a3fedb723d949facdc5e70b"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/config/WebConfig.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ba099ae732833f9537ace333f0b80437b2cb43",
+      "size": 1480,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/01ba099ae732833f9537ace333f0b80437b2cb43"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e87ddb389d0d68b66b402ad4e1f9e9c42ac4725d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/e87ddb389d0d68b66b402ad4e1f9e9c42ac4725d"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/BranchesController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d78822d2fd8d979530a2c1484496ba6a0e7d42ec",
+      "size": 1807,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d78822d2fd8d979530a2c1484496ba6a0e7d42ec"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/ControllerValidation.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef6918fd9e20b24a8ab072a1b4c17863e0b46e0b",
+      "size": 574,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ef6918fd9e20b24a8ab072a1b4c17863e0b46e0b"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/DeliveriesController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b1b809ae392aaf6c3bdf5c397d9cdbc7b152c32",
+      "size": 2854,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4b1b809ae392aaf6c3bdf5c397d9cdbc7b152c32"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/HeadquartersController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b741a3bebdff55df55ce58d15a5991d976d807e6",
+      "size": 2574,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b741a3bebdff55df55ce58d15a5991d976d807e6"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/OrderDetailDeliveriesController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bbfd3f7a343e9b8ac59410e58df5093c7361f89",
+      "size": 2199,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2bbfd3f7a343e9b8ac59410e58df5093c7361f89"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/OrderDetailsController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97e2e4010c227a77f5d1fd7fc3797b7de58e9fd9",
+      "size": 2002,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/97e2e4010c227a77f5d1fd7fc3797b7de58e9fd9"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/OrdersController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f96fafad624623201b6e3db8d1873fc38d313181",
+      "size": 1857,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f96fafad624623201b6e3db8d1873fc38d313181"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/ProductsController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "051661450f75dac5d8d6787ca66b501fcef82ce5",
+      "size": 1823,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/051661450f75dac5d8d6787ca66b501fcef82ce5"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/RootController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66c58ca6eb92d9941f0422a9796f0ad7b3c23040",
+      "size": 297,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/66c58ca6eb92d9941f0422a9796f0ad7b3c23040"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/controller/SuppliersController.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00b9465acff6e8821ee41885a423d9b992d668b4",
+      "size": 2141,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/00b9465acff6e8821ee41885a423d9b992d668b4"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f6184fb617bcda990eadc391fc71b33675e2d79d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f6184fb617bcda990eadc391fc71b33675e2d79d"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception/ApiException.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e58e3c99f8345a38c4f288c30841de3b12d280f0",
+      "size": 295,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e58e3c99f8345a38c4f288c30841de3b12d280f0"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception/ConflictException.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19c9d9840cae0448024154f6e5b1d9f54ec6ae16",
+      "size": 190,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/19c9d9840cae0448024154f6e5b1d9f54ec6ae16"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception/DatabaseException.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3444120558fa1000b9aa462520a63aa4605f611d",
+      "size": 190,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3444120558fa1000b9aa462520a63aa4605f611d"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception/GlobalExceptionHandler.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c862f1855ec4e807790fcc35e99860e6168c8c60",
+      "size": 1981,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c862f1855ec4e807790fcc35e99860e6168c8c60"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception/NotFoundException.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9e46092ff425af61ac33a23b1dc6d844b4b9da6",
+      "size": 185,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a9e46092ff425af61ac33a23b1dc6d844b4b9da6"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/exception/ValidationException.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eea60d2f2f1e45523d6bc515bbb0338baff56b9e",
+      "size": 196,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/eea60d2f2f1e45523d6bc515bbb0338baff56b9e"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53fe81c90ddd23bf247d98f8bb27d5fd54ddb81d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/53fe81c90ddd23bf247d98f8bb27d5fd54ddb81d"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/BranchModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd599952569c6800fdaf5154bf5efbc498af0f57",
+      "size": 805,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/fd599952569c6800fdaf5154bf5efbc498af0f57"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/DeliveryModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7faaf44281039cb03ad9bc77eae84319cbfced9",
+      "size": 774,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b7faaf44281039cb03ad9bc77eae84319cbfced9"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/HeadquartersModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78d70dc8196c04952332987df4cd0adfb3b942a3",
+      "size": 869,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/78d70dc8196c04952332987df4cd0adfb3b942a3"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/OrderDetailDeliveryModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1883ee705c45acad044276ddcaf5a1fc7da9a2df",
+      "size": 620,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1883ee705c45acad044276ddcaf5a1fc7da9a2df"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/OrderDetailModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faceae275cbb9c9f946ad834f0a8a6edafeff981",
+      "size": 524,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/faceae275cbb9c9f946ad834f0a8a6edafeff981"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/OrderModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86cc70fc12b381c94502ac112eaaf47122e42385",
+      "size": 634,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/86cc70fc12b381c94502ac112eaaf47122e42385"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/ProductModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a7715647f3ae5daf878b6c1294b1d01a7da7b8e",
+      "size": 841,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1a7715647f3ae5daf878b6c1294b1d01a7da7b8e"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/model/SupplierModel.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "172792a8383c90189e5d356924902d784388466a",
+      "size": 803,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/172792a8383c90189e5d356924902d784388466a"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b33708f5fb3f2ae2f2e2c1f892407d1668c6f341",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/b33708f5fb3f2ae2f2e2c1f892407d1668c6f341"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/BranchesRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6574e20ea62cd45630247e8258bd98179d5e33af",
+      "size": 2718,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/6574e20ea62cd45630247e8258bd98179d5e33af"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/DeliveriesRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1db21a769568b37911131a4f10881c54aaf6132",
+      "size": 2698,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c1db21a769568b37911131a4f10881c54aaf6132"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/HeadquartersRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dc8ba02ce320da67a84d3abbd3d4be166086810",
+      "size": 3685,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2dc8ba02ce320da67a84d3abbd3d4be166086810"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/OrderDetailDeliveriesRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "499036f67da572afb276ba8816ce4667fc46cce6",
+      "size": 2638,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/499036f67da572afb276ba8816ce4667fc46cce6"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/OrderDetailsRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b93cdbb4070a6348958f0a47a8bb587289962e59",
+      "size": 2289,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b93cdbb4070a6348958f0a47a8bb587289962e59"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/OrdersRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce990df5dec38bbb6a3bee1655d0b0b3c3e9fa2a",
+      "size": 2432,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ce990df5dec38bbb6a3bee1655d0b0b3c3e9fa2a"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/ProductsRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e538a64e63fec48339ab4febcc14adaa657758d",
+      "size": 2829,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8e538a64e63fec48339ab4febcc14adaa657758d"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/SqlUpdateBuilder.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "039ca8a78a3673a2f92f745bb43a681ead3af434",
+      "size": 1499,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/039ca8a78a3673a2f92f745bb43a681ead3af434"
+    },
+    {
+      "path": "src/api-java/src/main/java/com/octocat/supply/repository/SuppliersRepository.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deadaacedd8dd72f44c7bf182e857529754370dd",
+      "size": 2894,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/deadaacedd8dd72f44c7bf182e857529754370dd"
+    },
+    {
+      "path": "src/api-java/src/main/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89747c3eed45f888da6fe8dbf7bc617ab0246d93",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/89747c3eed45f888da6fe8dbf7bc617ab0246d93"
+    },
+    {
+      "path": "src/api-java/src/main/resources/application.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd5c96142dce658c70a876e0c07a9c0fd2bef78a",
+      "size": 176,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bd5c96142dce658c70a876e0c07a9c0fd2bef78a"
+    },
+    {
+      "path": "src/api-java/src/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "211020a7c9b4244936f174cb6a223f5ec8692bf9",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/211020a7c9b4244936f174cb6a223f5ec8692bf9"
+    },
+    {
+      "path": "src/api-java/src/test/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f026c2855d4405b9e645a778a2d0ee724c7e11f7",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f026c2855d4405b9e645a778a2d0ee724c7e11f7"
+    },
+    {
+      "path": "src/api-java/src/test/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d0a8ec2d99f9185b0b10161d640408e0dcb7f11",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/9d0a8ec2d99f9185b0b10161d640408e0dcb7f11"
+    },
+    {
+      "path": "src/api-java/src/test/java/com/octocat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50fc58269b202c793a9f0ff82e72d7e4329e7c90",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/50fc58269b202c793a9f0ff82e72d7e4329e7c90"
+    },
+    {
+      "path": "src/api-java/src/test/java/com/octocat/supply",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04b2cef524b7bc993c46ca9cb9089ecfc558f1db",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/04b2cef524b7bc993c46ca9cb9089ecfc558f1db"
+    },
+    {
+      "path": "src/api-java/src/test/java/com/octocat/supply/ApiEndpointsTest.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f9b7a164ebb8c3c9f406d740086d8c6b7de9af1",
+      "size": 2364,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3f9b7a164ebb8c3c9f406d740086d8c6b7de9af1"
+    },
+    {
+      "path": "src/api-java/src/test/java/com/octocat/supply/RootControllerTest.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7002696fab90ddbe7abaf5c832d89d77c79c93f4",
+      "size": 913,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7002696fab90ddbe7abaf5c832d89d77c79c93f4"
+    },
+    {
+      "path": "src/api-java/src/test/resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07551aac5ba525256225a62383696e359f200da2",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/07551aac5ba525256225a62383696e359f200da2"
+    },
+    {
+      "path": "src/api-java/src/test/resources/application.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97ec0123f299a8cac112bf30a6f955880c876c46",
+      "size": 39,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/97ec0123f299a8cac112bf30a6f955880c876c46"
+    },
+    {
+      "path": "src/api-py",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5021cb64b2b8a978f606568c7974bc4dc3debf63",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/5021cb64b2b8a978f606568c7974bc4dc3debf63"
+    },
+    {
+      "path": "src/api-py/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "805ae45d962b60d727ec331a04ab5bbcba753c68",
+      "size": 688,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/805ae45d962b60d727ec331a04ab5bbcba753c68"
+    },
+    {
+      "path": "src/api-py/database",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c9b2e75ef5cb36f076d71def80542a414546873",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/9c9b2e75ef5cb36f076d71def80542a414546873"
+    },
+    {
+      "path": "src/api-py/database/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb24877e3a673956e0011a853fd761372c90d0f2",
+      "size": 43,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/fb24877e3a673956e0011a853fd761372c90d0f2"
+    },
+    {
+      "path": "src/api-py/database/migrate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c29446172517a85e674b325736973bbc7ef2b09e",
+      "size": 3525,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c29446172517a85e674b325736973bbc7ef2b09e"
+    },
+    {
+      "path": "src/api-py/database/sqlite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85e97dd7735c3eb46f06e427f1c01ae3a9e6e9b",
+      "size": 831,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d85e97dd7735c3eb46f06e427f1c01ae3a9e6e9b"
+    },
+    {
+      "path": "src/api-py/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43eb4ce45b29b28b4ec33c27a0d63b026aed02f0",
+      "size": 1885,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/43eb4ce45b29b28b4ec33c27a0d63b026aed02f0"
+    },
+    {
+      "path": "src/api-py/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75b1d6ed98cb1d31dd6efa4116338893e558c6d8",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/75b1d6ed98cb1d31dd6efa4116338893e558c6d8"
+    },
+    {
+      "path": "src/api-py/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "208fedbbcf843521e4b76b238d899131fc7f8241",
+      "size": 27,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/208fedbbcf843521e4b76b238d899131fc7f8241"
+    },
+    {
+      "path": "src/api-py/models/branch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f876a1235b9c703b657e67cd33573e2a90f4458a",
+      "size": 817,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f876a1235b9c703b657e67cd33573e2a90f4458a"
+    },
+    {
+      "path": "src/api-py/models/delivery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1800c22169a8bf95b63354a2e1c54d9880de1278",
+      "size": 692,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1800c22169a8bf95b63354a2e1c54d9880de1278"
+    },
+    {
+      "path": "src/api-py/models/headquarters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ac385c563017b63b8d4cad50cb210fa1c9d9bf6",
+      "size": 846,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2ac385c563017b63b8d4cad50cb210fa1c9d9bf6"
+    },
+    {
+      "path": "src/api-py/models/order.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d0529bb699c1b9a89f53f2a599b5a79576a7a0b",
+      "size": 562,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4d0529bb699c1b9a89f53f2a599b5a79576a7a0b"
+    },
+    {
+      "path": "src/api-py/models/order_detail.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67db7c870e299dc38388e5ace3a60ec714a62eeb",
+      "size": 580,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/67db7c870e299dc38388e5ace3a60ec714a62eeb"
+    },
+    {
+      "path": "src/api-py/models/order_detail_delivery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3d2c4d1e3aeacd87527c3c49c1a2aa6c4d8ed03",
+      "size": 556,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b3d2c4d1e3aeacd87527c3c49c1a2aa6c4d8ed03"
+    },
+    {
+      "path": "src/api-py/models/product.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3c9512230a44bde2992f1d2bd1ee1dd15335c20",
+      "size": 778,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c3c9512230a44bde2992f1d2bd1ee1dd15335c20"
+    },
+    {
+      "path": "src/api-py/models/supplier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51570db7407c4dc2adacbc93a7d334d6783860ff",
+      "size": 797,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/51570db7407c4dc2adacbc93a7d334d6783860ff"
+    },
+    {
+      "path": "src/api-py/repositories",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "091e1b7a8fe9dca2eee947d341eb91e55e0707f4",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/091e1b7a8fe9dca2eee947d341eb91e55e0707f4"
+    },
+    {
+      "path": "src/api-py/repositories/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7332970e72b89df6b9a3a8922ddc654df390b53",
+      "size": 47,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f7332970e72b89df6b9a3a8922ddc654df390b53"
+    },
+    {
+      "path": "src/api-py/repositories/_helpers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a20bd03baa5af51dce1ec6836b3909a4b6f4fc56",
+      "size": 1109,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a20bd03baa5af51dce1ec6836b3909a4b6f4fc56"
+    },
+    {
+      "path": "src/api-py/repositories/branches.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09a9c6cf1781460fbbf93a71fdbff341aebae23a",
+      "size": 3705,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/09a9c6cf1781460fbbf93a71fdbff341aebae23a"
+    },
+    {
+      "path": "src/api-py/repositories/deliveries.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a21b8db57b23fa3fab7d05055b60e8f34844289e",
+      "size": 4123,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a21b8db57b23fa3fab7d05055b60e8f34844289e"
+    },
+    {
+      "path": "src/api-py/repositories/headquarters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76d990859d9097cffcbc40e65a7972bde9bd0c1e",
+      "size": 4286,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/76d990859d9097cffcbc40e65a7972bde9bd0c1e"
+    },
+    {
+      "path": "src/api-py/repositories/order_detail_deliveries.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e55c71aadf8b4542d0b7cfa0489a7b1f647725ee",
+      "size": 3725,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e55c71aadf8b4542d0b7cfa0489a7b1f647725ee"
+    },
+    {
+      "path": "src/api-py/repositories/order_details.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c773a6e5d8efc4ebbeef5f4f5aaecdf6626b5b",
+      "size": 3666,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c5c773a6e5d8efc4ebbeef5f4f5aaecdf6626b5b"
+    },
+    {
+      "path": "src/api-py/repositories/orders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6685e28f001041c7834945a9788cf00f6a3e3601",
+      "size": 3311,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/6685e28f001041c7834945a9788cf00f6a3e3601"
+    },
+    {
+      "path": "src/api-py/repositories/products.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84f68b6a0b404230d6b8a2e7af313045c1318459",
+      "size": 3822,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/84f68b6a0b404230d6b8a2e7af313045c1318459"
+    },
+    {
+      "path": "src/api-py/repositories/suppliers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "698e821d9e9c4fcee0b2f3822ed02337ddd62e72",
+      "size": 3877,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/698e821d9e9c4fcee0b2f3822ed02337ddd62e72"
+    },
+    {
+      "path": "src/api-py/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "169c804a0ed8f8a573d2c98a3c52b0539773efb9",
+      "size": 137,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/169c804a0ed8f8a573d2c98a3c52b0539773efb9"
+    },
+    {
+      "path": "src/api-py/routes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55b07b5b63d2184f1677943b376e5630c55d47be",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/55b07b5b63d2184f1677943b376e5630c55d47be"
+    },
+    {
+      "path": "src/api-py/routes/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75959421a194a62ef203d5141f9d9d6cf7515f9d",
+      "size": 29,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/75959421a194a62ef203d5141f9d9d6cf7515f9d"
+    },
+    {
+      "path": "src/api-py/routes/branches.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8db8cc364fb7beab35a4db87a8fd67f27f7158d4",
+      "size": 1386,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8db8cc364fb7beab35a4db87a8fd67f27f7158d4"
+    },
+    {
+      "path": "src/api-py/routes/deliveries.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b09327161dc98ad46721eb9ce09260c77add37fe",
+      "size": 2005,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b09327161dc98ad46721eb9ce09260c77add37fe"
+    },
+    {
+      "path": "src/api-py/routes/headquarters.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a266d9354f312f346702030bd73c5eeda961f75",
+      "size": 2049,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3a266d9354f312f346702030bd73c5eeda961f75"
+    },
+    {
+      "path": "src/api-py/routes/order_detail_deliveries.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f88848f3a74197fa88fb6241020a682a2271e64",
+      "size": 1651,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/6f88848f3a74197fa88fb6241020a682a2271e64"
+    },
+    {
+      "path": "src/api-py/routes/order_details.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d8bb570b46a67be60036c7a30ce66e654b89590",
+      "size": 1503,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9d8bb570b46a67be60036c7a30ce66e654b89590"
+    },
+    {
+      "path": "src/api-py/routes/orders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e67d1238894ce7cc9f74f1f6c1b1457ed7432fd",
+      "size": 1433,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0e67d1238894ce7cc9f74f1f6c1b1457ed7432fd"
+    },
+    {
+      "path": "src/api-py/routes/products.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3180d498839dea43284e1ac91a5dbde02c9c008e",
+      "size": 1314,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3180d498839dea43284e1ac91a5dbde02c9c008e"
+    },
+    {
+      "path": "src/api-py/routes/suppliers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "787353340dae745de99ea62beae869a60e702b0c",
+      "size": 1616,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/787353340dae745de99ea62beae869a60e702b0c"
+    },
+    {
+      "path": "src/api-py/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a781152a8223d9e1eccf3e9edb6935b30f1567c",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/7a781152a8223d9e1eccf3e9edb6935b30f1567c"
+    },
+    {
+      "path": "src/api-py/tests/test_main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "167fc5e5ec4aee00e14ab3e314309500cff03533",
+      "size": 283,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/167fc5e5ec4aee00e14ab3e314309500cff03533"
+    },
+    {
+      "path": "src/api-py/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b4680b51bf158f5b082547118bdcb1396ac0da1",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/0b4680b51bf158f5b082547118bdcb1396ac0da1"
+    },
+    {
+      "path": "src/api-py/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f419f55157257ccc38f33bb571e239175c26996b",
+      "size": 30,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f419f55157257ccc38f33bb571e239175c26996b"
+    },
+    {
+      "path": "src/api-py/utils/errors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce9edc04fd2e77356aff06a9e28ee13d0709719a",
+      "size": 1695,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ce9edc04fd2e77356aff06a9e28ee13d0709719a"
+    },
+    {
+      "path": "src/api-ts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "752d5e5a37c8cdc24888b078af71fce0b5aa9db2",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/752d5e5a37c8cdc24888b078af71fce0b5aa9db2"
+    },
+    {
+      "path": "src/api-ts/.dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa99920691b938f381c997a3a57df12bc0fd236c",
+      "size": 550,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/fa99920691b938f381c997a3a57df12bc0fd236c"
+    },
+    {
+      "path": "src/api-ts/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58851fcf2b6514961e91b857a5bcad446b0ad129",
+      "size": 59,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/58851fcf2b6514961e91b857a5bcad446b0ad129"
+    },
+    {
+      "path": "src/api-ts/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "485db78c489b0ca544c0e9de150d4dabd0f3c2df",
+      "size": 313,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/485db78c489b0ca544c0e9de150d4dabd0f3c2df"
+    },
+    {
+      "path": "src/api-ts/ERD.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba804205132778bc50b1e59669f3846f7c6ff089",
+      "size": 405033,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ba804205132778bc50b1e59669f3846f7c6ff089"
+    },
+    {
+      "path": "src/api-ts/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "916ebb10e603118c8fbb5218210f6ff4d00cdd5c",
+      "size": 897,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/916ebb10e603118c8fbb5218210f6ff4d00cdd5c"
+    },
+    {
+      "path": "src/api-ts/api-swagger.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc5894e1f09c111e5fe2522767c71bd825fbc2b5",
+      "size": 65600,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/dc5894e1f09c111e5fe2522767c71bd825fbc2b5"
+    },
+    {
+      "path": "src/api-ts/ca.key",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d74115a6c6d7a71e39740c5a233cdbdf337b5a0",
+      "size": 1678,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0d74115a6c6d7a71e39740c5a233cdbdf337b5a0"
+    },
+    {
+      "path": "src/api-ts/eslint.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff9a3786686e0d4c4f0f934caaca7cf551c5e5c6",
+      "size": 1468,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ff9a3786686e0d4c4f0f934caaca7cf551c5e5c6"
+    },
+    {
+      "path": "src/api-ts/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "502808ccd1a22e95ee07ec8cd9f314e8f322c7ef",
+      "size": 178264,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/502808ccd1a22e95ee07ec8cd9f314e8f322c7ef"
+    },
+    {
+      "path": "src/api-ts/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7dc802de74eb1f87afbc2134997dcbc3aa13b58",
+      "size": 1319,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c7dc802de74eb1f87afbc2134997dcbc3aa13b58"
+    },
+    {
+      "path": "src/api-ts/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8001509f3ec479f4eb3dfcb68fcd3a48ea01211f",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/8001509f3ec479f4eb3dfcb68fcd3a48ea01211f"
+    },
+    {
+      "path": "src/api-ts/src/db",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a603c9751b29c1b0049f9b159e0335b70671435",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/0a603c9751b29c1b0049f9b159e0335b70671435"
+    },
+    {
+      "path": "src/api-ts/src/db/config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "133e2855e837331e9b8da8e8d6ff0b23ac2784d8",
+      "size": 760,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/133e2855e837331e9b8da8e8d6ff0b23ac2784d8"
+    },
+    {
+      "path": "src/api-ts/src/db/migrate.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b8025ac7f6899593354afa82d9ef6bfb014a9a",
+      "size": 5004,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/67b8025ac7f6899593354afa82d9ef6bfb014a9a"
+    },
+    {
+      "path": "src/api-ts/src/db/seed.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70c3346e8ed95da29611781dddd10af47b3e3b87",
+      "size": 4626,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/70c3346e8ed95da29611781dddd10af47b3e3b87"
+    },
+    {
+      "path": "src/api-ts/src/db/sqlite.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c44bcdce9e789d651960ac041181daaed521f49c",
+      "size": 5378,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c44bcdce9e789d651960ac041181daaed521f49c"
+    },
+    {
+      "path": "src/api-ts/src/generate-swagger.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a968bf1dc2955c2bbafc262adb70041fa09e001",
+      "size": 748,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3a968bf1dc2955c2bbafc262adb70041fa09e001"
+    },
+    {
+      "path": "src/api-ts/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2f278a6b8e64927ee1f861397b9449ec2436abb",
+      "size": 3258,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d2f278a6b8e64927ee1f861397b9449ec2436abb"
+    },
+    {
+      "path": "src/api-ts/src/init-db.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6b0b8d9dc375b45bfe84a3b0999b834a8b2ea8d",
+      "size": 1172,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a6b0b8d9dc375b45bfe84a3b0999b834a8b2ea8d"
+    },
+    {
+      "path": "src/api-ts/src/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4885b75c31bee96dfa9e51747d1dc5209e968b6c",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/4885b75c31bee96dfa9e51747d1dc5209e968b6c"
+    },
+    {
+      "path": "src/api-ts/src/models/branch.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7c385c48e8768df66a195e8a4fa7ed23a85c478",
+      "size": 1278,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e7c385c48e8768df66a195e8a4fa7ed23a85c478"
+    },
+    {
+      "path": "src/api-ts/src/models/delivery.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb58ce14e15ca2c0d5fce16a7c3893dcc6f61fa1",
+      "size": 995,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/fb58ce14e15ca2c0d5fce16a7c3893dcc6f61fa1"
+    },
+    {
+      "path": "src/api-ts/src/models/headquarters.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7002148870c20ec3b5f617b41edf2d30def1bbfd",
+      "size": 1697,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7002148870c20ec3b5f617b41edf2d30def1bbfd"
+    },
+    {
+      "path": "src/api-ts/src/models/order.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7938253faba1ba00ae836f58167ef33e6d4e2add",
+      "size": 1087,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7938253faba1ba00ae836f58167ef33e6d4e2add"
+    },
+    {
+      "path": "src/api-ts/src/models/orderDetail.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c2179b43898b05c0e098edf2c89421d5b359fcb",
+      "size": 1065,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4c2179b43898b05c0e098edf2c89421d5b359fcb"
+    },
+    {
+      "path": "src/api-ts/src/models/orderDetailDelivery.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a1cb2dfc00a3ec8c26a2d06d41febe7bec34a07",
+      "size": 963,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8a1cb2dfc00a3ec8c26a2d06d41febe7bec34a07"
+    },
+    {
+      "path": "src/api-ts/src/models/product.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f141f4abae01aec1d4285fdd2dcf6fb786887a4b",
+      "size": 1522,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f141f4abae01aec1d4285fdd2dcf6fb786887a4b"
+    },
+    {
+      "path": "src/api-ts/src/models/supplier.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2875c9a13a2537eb39480068f2b737b5524a869f",
+      "size": 1242,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2875c9a13a2537eb39480068f2b737b5524a869f"
+    },
+    {
+      "path": "src/api-ts/src/repositories",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f25cb5043e69b9a9b701f305a700bd7f958a3502",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f25cb5043e69b9a9b701f305a700bd7f958a3502"
+    },
+    {
+      "path": "src/api-ts/src/repositories/branchesRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db3e6d7ae8df97e03451cef1199692d83e4a6859",
+      "size": 4497,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/db3e6d7ae8df97e03451cef1199692d83e4a6859"
+    },
+    {
+      "path": "src/api-ts/src/repositories/deliveriesRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6ba66991edf5b296298ea27d5966f00869a9ac9",
+      "size": 5250,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b6ba66991edf5b296298ea27d5966f00869a9ac9"
+    },
+    {
+      "path": "src/api-ts/src/repositories/headquartersRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d60cc723ce3e41175478597659a4e34b152fae5",
+      "size": 4210,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4d60cc723ce3e41175478597659a4e34b152fae5"
+    },
+    {
+      "path": "src/api-ts/src/repositories/orderDetailDeliveriesRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26cbaa9bf8a2b51ce73969e234ff543f1ccccf17",
+      "size": 5775,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/26cbaa9bf8a2b51ce73969e234ff543f1ccccf17"
+    },
+    {
+      "path": "src/api-ts/src/repositories/orderDetailsRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "601df8680046f64294f1f25926661cd715a216c1",
+      "size": 5013,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/601df8680046f64294f1f25926661cd715a216c1"
+    },
+    {
+      "path": "src/api-ts/src/repositories/ordersRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76862cc9bdacea74fe9fe9f4a401db7c4490f0b6",
+      "size": 4724,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/76862cc9bdacea74fe9fe9f4a401db7c4490f0b6"
+    },
+    {
+      "path": "src/api-ts/src/repositories/productsRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e7498399af05c437ae7bfc1c228dc385d47585",
+      "size": 4506,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c8e7498399af05c437ae7bfc1c228dc385d47585"
+    },
+    {
+      "path": "src/api-ts/src/repositories/suppliersRepo.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a57cc1958a8e40070866f3a8e7bc1d6e71206c9",
+      "size": 7316,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4a57cc1958a8e40070866f3a8e7bc1d6e71206c9"
+    },
+    {
+      "path": "src/api-ts/src/repositories/suppliersRepo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7237d4f7970a2e0bbff4f7f3433f815b6ba47481",
+      "size": 4441,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7237d4f7970a2e0bbff4f7f3433f815b6ba47481"
+    },
+    {
+      "path": "src/api-ts/src/routes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8fe33416cc5e1f829ad2ee2db98c551231d918c5",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/8fe33416cc5e1f829ad2ee2db98c551231d918c5"
+    },
+    {
+      "path": "src/api-ts/src/routes/branch.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd2f57a94d3a8da9dd9d30446816aa2c13f1b9ca",
+      "size": 3943,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/cd2f57a94d3a8da9dd9d30446816aa2c13f1b9ca"
+    },
+    {
+      "path": "src/api-ts/src/routes/branch.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1ffdccb8c4a03f0ac10da91b3259d07f73f6e1d",
+      "size": 4335,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b1ffdccb8c4a03f0ac10da91b3259d07f73f6e1d"
+    },
+    {
+      "path": "src/api-ts/src/routes/delivery.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bd7bf2dfe8669c1e7060750ffd73a6d99e2f7dc",
+      "size": 6993,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9bd7bf2dfe8669c1e7060750ffd73a6d99e2f7dc"
+    },
+    {
+      "path": "src/api-ts/src/routes/headquarters.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1cd4f1cec08d88f20cba9adec0363606d30a63f",
+      "size": 9188,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b1cd4f1cec08d88f20cba9adec0363606d30a63f"
+    },
+    {
+      "path": "src/api-ts/src/routes/order.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b78ec3779f6fce4eef4e6d143a2c3cdc2bb833ee",
+      "size": 4526,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b78ec3779f6fce4eef4e6d143a2c3cdc2bb833ee"
+    },
+    {
+      "path": "src/api-ts/src/routes/orderDetail.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "724edccf1965ca5eff649deb3b5f04e30634eb55",
+      "size": 4648,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/724edccf1965ca5eff649deb3b5f04e30634eb55"
+    },
+    {
+      "path": "src/api-ts/src/routes/orderDetailDelivery.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f910da432e2139379ff284b21191625dc0f849f",
+      "size": 5187,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8f910da432e2139379ff284b21191625dc0f849f"
+    },
+    {
+      "path": "src/api-ts/src/routes/product.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47a9c6557aaafadc46e262d6e69c37ca1248e146",
+      "size": 4373,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/47a9c6557aaafadc46e262d6e69c37ca1248e146"
+    },
+    {
+      "path": "src/api-ts/src/routes/supplier.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2401bb3c136023a3a48e53dc5d95ef92b3118a0",
+      "size": 5898,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f2401bb3c136023a3a48e53dc5d95ef92b3118a0"
+    },
+    {
+      "path": "src/api-ts/src/seedData.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a7ceb2b25f43740a9902b646500e5849e6ea777",
+      "size": 8628,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3a7ceb2b25f43740a9902b646500e5849e6ea777"
+    },
+    {
+      "path": "src/api-ts/src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1d78602728b9fec7811feab535da9cba3adf6de",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f1d78602728b9fec7811feab535da9cba3adf6de"
+    },
+    {
+      "path": "src/api-ts/src/utils/errors.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0dcd960e45708721fd817ce54b94411003d177f",
+      "size": 2754,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a0dcd960e45708721fd817ce54b94411003d177f"
+    },
+    {
+      "path": "src/api-ts/src/utils/sql.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1a76c59e2b913827f5c99e9c63a9cb4dbf86da",
+      "size": 5070,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2b1a76c59e2b913827f5c99e9c63a9cb4dbf86da"
+    },
+    {
+      "path": "src/api-ts/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "858db84139ed7959dc1d8b34c80aeb3a2ec3eeeb",
+      "size": 308,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/858db84139ed7959dc1d8b34c80aeb3a2ec3eeeb"
+    },
+    {
+      "path": "src/api-ts/vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d368711efee2329d32269239d6d0a577b6107408",
+      "size": 394,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d368711efee2329d32269239d6d0a577b6107408"
+    },
+    {
+      "path": "src/database",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "491eafba3c445f5f3c3fae43111a51661b347137",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/491eafba3c445f5f3c3fae43111a51661b347137"
+    },
+    {
+      "path": "src/database/migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f7df9871c098da83d30ddc11fe18b298202dc17",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/6f7df9871c098da83d30ddc11fe18b298202dc17"
+    },
+    {
+      "path": "src/database/migrations/001_init.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "267a0e8c739244289e254ca3d6a2e7746c23be09",
+      "size": 3639,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/267a0e8c739244289e254ca3d6a2e7746c23be09"
+    },
+    {
+      "path": "src/database/migrations/002_add_supplier_status_fields.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf3646e4bcaebce551ba10180ec68e567307eed9",
+      "size": 207,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/bf3646e4bcaebce551ba10180ec68e567307eed9"
+    },
+    {
+      "path": "src/database/seed",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "daf2b3742a86253c55039e4ae2f315c2bde25cc1",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/daf2b3742a86253c55039e4ae2f315c2bde25cc1"
+    },
+    {
+      "path": "src/database/seed/001_suppliers.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1baaf5d7d05a017c1e675388bbdd8eec50d91997",
+      "size": 550,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1baaf5d7d05a017c1e675388bbdd8eec50d91997"
+    },
+    {
+      "path": "src/database/seed/002_headquarters.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "222d567c2c3de89030b08ba6d52cff0bec463001",
+      "size": 304,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/222d567c2c3de89030b08ba6d52cff0bec463001"
+    },
+    {
+      "path": "src/database/seed/003_branches.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c75c6494217f2ac02643dd0d06913f73e19249b6",
+      "size": 417,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c75c6494217f2ac02643dd0d06913f73e19249b6"
+    },
+    {
+      "path": "src/database/seed/004_products.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba1a3d054e2896da525384a9ae5bff365f917f43",
+      "size": 3142,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ba1a3d054e2896da525384a9ae5bff365f917f43"
+    },
+    {
+      "path": "src/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "789f4c1c97371a879c10bf1254f25604b8cd2466",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/789f4c1c97371a879c10bf1254f25604b8cd2466"
+    },
+    {
+      "path": "src/docs/architecture.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "710646e5f1233dd781c6d92372fcc4109f63fd7c",
+      "size": 3113,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/710646e5f1233dd781c6d92372fcc4109f63fd7c"
+    },
+    {
+      "path": "src/docs/build.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9563474018a8421fbb8aeb5162da74f9c2a34715",
+      "size": 4051,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9563474018a8421fbb8aeb5162da74f9c2a34715"
+    },
+    {
+      "path": "src/docs/design",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c650e4e7d3ac4914429b237beba83df152dbabe1",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/c650e4e7d3ac4914429b237beba83df152dbabe1"
+    },
+    {
+      "path": "src/docs/design/cart.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4ac91cebfcf45adf9656e577a5ff517c02d119d",
+      "size": 241631,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b4ac91cebfcf45adf9656e577a5ff517c02d119d"
+    },
+    {
+      "path": "src/docs/design/footer.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c31b474d9d768c87a33023209ce0ee2989769249",
+      "size": 346654,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c31b474d9d768c87a33023209ce0ee2989769249"
+    },
+    {
+      "path": "src/docs/design/item-list.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0f92517265d5a48cec11c9e95cb08c8ac4c1a86",
+      "size": 735150,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e0f92517265d5a48cec11c9e95cb08c8ac4c1a86"
+    },
+    {
+      "path": "src/docs/design/main.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9281653cf2fabd47985708a5a0b07c01ae1253e4",
+      "size": 1544701,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9281653cf2fabd47985708a5a0b07c01ae1253e4"
+    },
+    {
+      "path": "src/docs/design/order-tracking-prototype.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1ffd956a67e7fe60d2ca3ee8380a1184f25828b",
+      "size": 146768,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d1ffd956a67e7fe60d2ca3ee8380a1184f25828b"
+    },
+    {
+      "path": "src/docs/sqlite-integration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d811e89f56006dc06f582e7cb95aa3bf69ccf3d8",
+      "size": 7232,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d811e89f56006dc06f582e7cb95aa3bf69ccf3d8"
+    },
+    {
+      "path": "src/docs/tao.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b72b8b4afd934d820eb11bf52f5d623fa76fba69",
+      "size": 2599,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b72b8b4afd934d820eb11bf52f5d623fa76fba69"
+    },
+    {
+      "path": "src/frontend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8593f6c6817eb5048bab0827afb75c3581396833",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/8593f6c6817eb5048bab0827afb75c3581396833"
+    },
+    {
+      "path": "src/frontend/.dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0fab3f707dbae8601901ad1a1e94ce7e4d46ce2",
+      "size": 498,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e0fab3f707dbae8601901ad1a1e94ce7e4d46ce2"
+    },
+    {
+      "path": "src/frontend/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f01ca5eecc5c9e9254ad5d4a870c486122e2c2b4",
+      "size": 319,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f01ca5eecc5c9e9254ad5d4a870c486122e2c2b4"
+    },
+    {
+      "path": "src/frontend/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ad4bdf1ff19c315f02db68126ef2c4fd5d6e7ab",
+      "size": 703,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/5ad4bdf1ff19c315f02db68126ef2c4fd5d6e7ab"
+    },
+    {
+      "path": "src/frontend/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40ede56ea6e14587985fbe9b74c121cfcc7a9aa7",
+      "size": 1920,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/40ede56ea6e14587985fbe9b74c121cfcc7a9aa7"
+    },
+    {
+      "path": "src/frontend/entrypoint.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bcabd7955d250d42c355ddfbbf3884bab31cb84",
+      "size": 1911,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3bcabd7955d250d42c355ddfbbf3884bab31cb84"
+    },
+    {
+      "path": "src/frontend/eslint.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b4edb2c6535d929224c276e1ecae22f7f44d2bb",
+      "size": 837,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9b4edb2c6535d929224c276e1ecae22f7f44d2bb"
+    },
+    {
+      "path": "src/frontend/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "affe3c3ed4c04878f1c1dc39a7758b56428659f6",
+      "size": 348,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/affe3c3ed4c04878f1c1dc39a7758b56428659f6"
+    },
+    {
+      "path": "src/frontend/nginx.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7d26a1e2749830d1fdf39f7a4f050e43594e27b",
+      "size": 687,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c7d26a1e2749830d1fdf39f7a4f050e43594e27b"
+    },
+    {
+      "path": "src/frontend/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4f10d3f72b399e3cb37d3e2529156e342aa953",
+      "size": 207459,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7a4f10d3f72b399e3cb37d3e2529156e342aa953"
+    },
+    {
+      "path": "src/frontend/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "147c193bd1ed0f531e4465fddc9c18053e2496dd",
+      "size": 1341,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/147c193bd1ed0f531e4465fddc9c18053e2496dd"
+    },
+    {
+      "path": "src/frontend/playwright.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8df9284a5b93a5ed1c0cb5ce1dbbbc7b5d854b52",
+      "size": 814,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8df9284a5b93a5ed1c0cb5ce1dbbbc7b5d854b52"
+    },
+    {
+      "path": "src/frontend/postcss.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52012d2b5e5febc67c43b5f25250076e6701e0bd",
+      "size": 78,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/52012d2b5e5febc67c43b5f25250076e6701e0bd"
+    },
+    {
+      "path": "src/frontend/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4303c0972d7f1c13f18671cc579be1308dc37973",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/4303c0972d7f1c13f18671cc579be1308dc37973"
+    },
+    {
+      "path": "src/frontend/public/auto-groomer.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5813649801ebafe0d20f40788d52b08f7bfaf72",
+      "size": 1748257,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d5813649801ebafe0d20f40788d52b08f7bfaf72"
+    },
+    {
+      "path": "src/frontend/public/catflix.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b67cd701ee7a45d7dfa19689a7961976d0e0103a",
+      "size": 1879735,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b67cd701ee7a45d7dfa19689a7961976d0e0103a"
+    },
+    {
+      "path": "src/frontend/public/chirp-cam.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6ee443f9818f1c87fbe73b0f6972db4544ce6b4",
+      "size": 1949726,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d6ee443f9818f1c87fbe73b0f6972db4544ce6b4"
+    },
+    {
+      "path": "src/frontend/public/copilot.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eb1aff0a671e8efeda983c722c00ecd3d84a828",
+      "size": 35312,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2eb1aff0a671e8efeda983c722c00ecd3d84a828"
+    },
+    {
+      "path": "src/frontend/public/door-dash.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f9f96164a01af82b66e075ba9a26f60302b391c",
+      "size": 1588998,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3f9f96164a01af82b66e075ba9a26f60302b391c"
+    },
+    {
+      "path": "src/frontend/public/feeder.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49c3dd7b03b87159f26df69eef2976b5b2f077e1",
+      "size": 1639770,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/49c3dd7b03b87159f26df69eef2976b5b2f077e1"
+    },
+    {
+      "path": "src/frontend/public/hero.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c37fa2a3319162258d0b955022dce5d04c21cf",
+      "size": 2432879,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/b9c37fa2a3319162258d0b955022dce5d04c21cf"
+    },
+    {
+      "path": "src/frontend/public/litter-box.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48668fa72a71dcae7d273bad561e99d46713fb1f",
+      "size": 1613519,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/48668fa72a71dcae7d273bad561e99d46713fb1f"
+    },
+    {
+      "path": "src/frontend/public/runtime-config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f504f36a277eb6b75b53e2708eb9bbc3502ef426",
+      "size": 248,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f504f36a277eb6b75b53e2708eb9bbc3502ef426"
+    },
+    {
+      "path": "src/frontend/public/scratch-pad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e03a47fd1d312031fe2fe7045c6279135acdae4",
+      "size": 1524975,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/9e03a47fd1d312031fe2fe7045c6279135acdae4"
+    },
+    {
+      "path": "src/frontend/public/sleep-nest.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64eaa1095688525b133eb10a8f55559551198d34",
+      "size": 1810316,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/64eaa1095688525b133eb10a8f55559551198d34"
+    },
+    {
+      "path": "src/frontend/public/smart-collar.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7188dba8b889eabbc4d14bbb835e4bd83720f5ea",
+      "size": 1501542,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/7188dba8b889eabbc4d14bbb835e4bd83720f5ea"
+    },
+    {
+      "path": "src/frontend/public/smart-fountain.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd94d3dc68000ca287d21c9188019b8a68008ea9",
+      "size": 1395981,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/dd94d3dc68000ca287d21c9188019b8a68008ea9"
+    },
+    {
+      "path": "src/frontend/public/snack-vault.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c7a58024b3ca297ac6ed1eb963a36183503b69f",
+      "size": 1669393,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/0c7a58024b3ca297ac6ed1eb963a36183503b69f"
+    },
+    {
+      "path": "src/frontend/public/tracker-mat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b53a9cde17d0dbcddff4e6aa40b2d7dc8107f7",
+      "size": 1522856,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/90b53a9cde17d0dbcddff4e6aa40b2d7dc8107f7"
+    },
+    {
+      "path": "src/frontend/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "138f4fa09ea73df61a361bc50d00b63b55ef005b",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/138f4fa09ea73df61a361bc50d00b63b55ef005b"
+    },
+    {
+      "path": "src/frontend/src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b9f534e4fc63f7f0daf0b4209874b57eea2471",
+      "size": 1473,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/29b9f534e4fc63f7f0daf0b4209874b57eea2471"
+    },
+    {
+      "path": "src/frontend/src/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f36963d6b061f58f48b71bef025872131c3de88a",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/f36963d6b061f58f48b71bef025872131c3de88a"
+    },
+    {
+      "path": "src/frontend/src/api/config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a884407fe95a3e89fd413cf3aaa9710e8138ffdd",
+      "size": 1341,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/a884407fe95a3e89fd413cf3aaa9710e8138ffdd"
+    },
+    {
+      "path": "src/frontend/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51cf72e1534a0af2ef1ad36a44864988db5d4400",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/51cf72e1534a0af2ef1ad36a44864988db5d4400"
+    },
+    {
+      "path": "src/frontend/src/components/About.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5d5ea9480106d6245b5157667a8d2b650fafae2",
+      "size": 2972,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/c5d5ea9480106d6245b5157667a8d2b650fafae2"
+    },
+    {
+      "path": "src/frontend/src/components/Footer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44fa1de02893509dafb27b7cb53c442f570c61b8",
+      "size": 4084,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/44fa1de02893509dafb27b7cb53c442f570c61b8"
+    },
+    {
+      "path": "src/frontend/src/components/Login.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6429c7f520b9ea14c941a3231e6c8346d0b24315",
+      "size": 3161,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/6429c7f520b9ea14c941a3231e6c8346d0b24315"
+    },
+    {
+      "path": "src/frontend/src/components/Navigation.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f35e12909c2777158c7c5d1c7fe2dbea49502df",
+      "size": 6593,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/5f35e12909c2777158c7c5d1c7fe2dbea49502df"
+    },
+    {
+      "path": "src/frontend/src/components/Welcome.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1455680d9e7c00a2fb777ae3d1069c5cb31f70de",
+      "size": 19393,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/1455680d9e7c00a2fb777ae3d1069c5cb31f70de"
+    },
+    {
+      "path": "src/frontend/src/components/admin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54e513ad9b9f70921a11a90ca2695de095c1596a",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/54e513ad9b9f70921a11a90ca2695de095c1596a"
+    },
+    {
+      "path": "src/frontend/src/components/admin/AdminProducts.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "332caa129153113d9076de6efb61919076276c84",
+      "size": 11136,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/332caa129153113d9076de6efb61919076276c84"
+    },
+    {
+      "path": "src/frontend/src/components/entity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75786966d17ed23ce9599ec8c9f71e401af3c7a6",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/75786966d17ed23ce9599ec8c9f71e401af3c7a6"
+    },
+    {
+      "path": "src/frontend/src/components/entity/product",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a51977e6152240739009f79bfd8644a130f5488",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/5a51977e6152240739009f79bfd8644a130f5488"
+    },
+    {
+      "path": "src/frontend/src/components/entity/product/ProductForm.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da7f9a640462f4546f7a31754454f0258ecc3450",
+      "size": 8076,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/da7f9a640462f4546f7a31754454f0258ecc3450"
+    },
+    {
+      "path": "src/frontend/src/components/entity/product/Products.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b49f2f921fc5512f300eded42b3f13927ec8977",
+      "size": 13164,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/8b49f2f921fc5512f300eded42b3f13927ec8977"
+    },
+    {
+      "path": "src/frontend/src/context",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44b991b90478b5cbb621e5ed96b4167c9f018ecf",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/44b991b90478b5cbb621e5ed96b4167c9f018ecf"
+    },
+    {
+      "path": "src/frontend/src/context/AuthContext.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "578a9726f1f1bad75275e632e38407c732bc9088",
+      "size": 1228,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/578a9726f1f1bad75275e632e38407c732bc9088"
+    },
+    {
+      "path": "src/frontend/src/context/ThemeContext.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fba8ac2c5cb1268c9bd8ca7ff5b3d87ed42311e",
+      "size": 1260,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/2fba8ac2c5cb1268c9bd8ca7ff5b3d87ed42311e"
+    },
+    {
+      "path": "src/frontend/src/context/themeContextUtils.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d02bb9b790c3c248ffaecdfe5ee60aad794cd851",
+      "size": 209,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d02bb9b790c3c248ffaecdfe5ee60aad794cd851"
+    },
+    {
+      "path": "src/frontend/src/context/useTheme.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/frontend/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b60bee738fdcebc1816c03097567f1719dc0b1a",
+      "size": 1954,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3b60bee738fdcebc1816c03097567f1719dc0b1a"
+    },
+    {
+      "path": "src/frontend/src/main.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f778db8852c4df5883191289f8bddb1cac3db9e",
+      "size": 411,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/3f778db8852c4df5883191289f8bddb1cac3db9e"
+    },
+    {
+      "path": "src/frontend/src/vite-env.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11f02fe2a0061d6e6e1f271b21da95423b448b32",
+      "size": 38,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/11f02fe2a0061d6e6e1f271b21da95423b448b32"
+    },
+    {
+      "path": "src/frontend/tailwind.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8f7f39aa1254161c2ac17735fb87062f24d561c",
+      "size": 813,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e8f7f39aa1254161c2ac17735fb87062f24d561c"
+    },
+    {
+      "path": "src/frontend/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9cf84059835b35dc0cfd39a2c4cd7f6a4c11d11",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/b9cf84059835b35dc0cfd39a2c4cd7f6a4c11d11"
+    },
+    {
+      "path": "src/frontend/tests/e2e",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7d13fab47b154154de3bb49b7d52e8e2000fde3",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/b7d13fab47b154154de3bb49b7d52e8e2000fde3"
+    },
+    {
+      "path": "src/frontend/tests/e2e/product-navigation.spec.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74b148523215acbef25b3d1af4225a2757abd8ab",
+      "size": 2874,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/74b148523215acbef25b3d1af4225a2757abd8ab"
+    },
+    {
+      "path": "src/frontend/tests/features",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5070fb1adddb82ee210100779add2bdea17d76ff",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/5070fb1adddb82ee210100779add2bdea17d76ff"
+    },
+    {
+      "path": "src/frontend/tests/features/product-navigation.feature",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e43bf770d275739f4b964716adf8bb878517a3bd",
+      "size": 955,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e43bf770d275739f4b964716adf8bb878517a3bd"
+    },
+    {
+      "path": "src/frontend/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b33139692fa1e3a0f923dc017cecdd3093610f9",
+      "size": 428,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/4b33139692fa1e3a0f923dc017cecdd3093610f9"
+    },
+    {
+      "path": "src/frontend/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e31a640f09bd8605d18cf485efe8d1bd93ee89b7",
+      "size": 335,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e31a640f09bd8605d18cf485efe8d1bd93ee89b7"
+    },
+    {
+      "path": "src/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "871a4907ac95af170a792ad66c7b0531c0a613f1",
+      "size": 82,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/871a4907ac95af170a792ad66c7b0531c0a613f1"
+    },
+    {
+      "path": "walkthrough",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e620ad58f6d1f8e6952c5b58ca30085a381c7f16",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/e620ad58f6d1f8e6952c5b58ca30085a381c7f16"
+    },
+    {
+      "path": "walkthrough/challenge-01",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "164b242b158498c6c3a4368385c1f85c88239efe",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/164b242b158498c6c3a4368385c1f85c88239efe"
+    },
+    {
+      "path": "walkthrough/challenge-01/solution-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71ddd8b081960b3ac0f3ab45de2361f2f73d1909",
+      "size": 2750,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/71ddd8b081960b3ac0f3ab45de2361f2f73d1909"
+    },
+    {
+      "path": "walkthrough/challenge-02",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ceb8c270a8ff2d90342557926d1c7a2d93d3d21",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/9ceb8c270a8ff2d90342557926d1c7a2d93d3d21"
+    },
+    {
+      "path": "walkthrough/challenge-02/solution-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24f21f84ab3f055506471b06b23f70e758669914",
+      "size": 2824,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/24f21f84ab3f055506471b06b23f70e758669914"
+    },
+    {
+      "path": "walkthrough/challenge-03",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6cc78106e2a39a227c7c8251943df57e86a0e784",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/6cc78106e2a39a227c7c8251943df57e86a0e784"
+    },
+    {
+      "path": "walkthrough/challenge-03/solution-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3d1b7559fdcfe9966150e85093b240d4e8cb085",
+      "size": 3619,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/e3d1b7559fdcfe9966150e85093b240d4e8cb085"
+    },
+    {
+      "path": "walkthrough/challenge-04",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd3843c980b8f357557d5959282b3317d4b75e8d",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/cd3843c980b8f357557d5959282b3317d4b75e8d"
+    },
+    {
+      "path": "walkthrough/challenge-04/solution-04.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d31bd09c938ed0de836d8b5b0ed13b8aefbfa301",
+      "size": 2384,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/d31bd09c938ed0de836d8b5b0ed13b8aefbfa301"
+    },
+    {
+      "path": "walkthrough/challenge-05",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7abbdcc3fe147fdd6f2425c9eba2302a9f87a4df",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/7abbdcc3fe147fdd6f2425c9eba2302a9f87a4df"
+    },
+    {
+      "path": "walkthrough/challenge-05/solution-05.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f841864881057d8abecf2dfd193950fd14650047",
+      "size": 3462,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/f841864881057d8abecf2dfd193950fd14650047"
+    },
+    {
+      "path": "walkthrough/challenge-06",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "172ddacde280f35067b48e2903bf8eabfb4ac9e9",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/172ddacde280f35067b48e2903bf8eabfb4ac9e9"
+    },
+    {
+      "path": "walkthrough/challenge-06/solution-06.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae49fde40ed7c8bfea1f4692f4998f170b971ee1",
+      "size": 2380,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/ae49fde40ed7c8bfea1f4692f4998f170b971ee1"
+    },
+    {
+      "path": "walkthrough/challenge-07",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c95372af579dc5941b8c00ab81f7f022319a81c1",
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/trees/c95372af579dc5941b8c00ab81f7f022319a81c1"
+    },
+    {
+      "path": "walkthrough/challenge-07/solution-07.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "675aa22cd1cc78451df9c625e66a28c28107ac8d",
+      "size": 2872,
+      "url": "https://api.github.com/repos/microsoft/MicroHack/git/blobs/675aa22cd1cc78451df9c625e66a28c28107ac8d"
+    }
+  ],
+  "truncated": false
+}

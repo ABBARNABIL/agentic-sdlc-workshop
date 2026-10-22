@@ -1,0 +1,121 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Guide from '../layouts/Guide.astro';
+import { getPages, upstreamLicense } from '../lib/content';
+import type { WorkshopPage } from '../lib/content';
+import { BASE, REPO, challengeLabels, challengeSummaries, repositoryUrl, starterPrompts, withBase } from '../lib/site';
+
+export const getStaticPaths = (async () => (await getPages()).map(page => ({
+  params: { slug: page.slug || undefined }, props: { page },
+}))) satisfies GetStaticPaths;
+
+interface Props { page: WorkshopPage }
+const { page } = Astro.props;
+const all = await getPages();
+const challenges = all.filter(item => item.kind === 'challenge').sort((a, b) => (a.number ?? 0) - (b.number ?? 0));
+const sequence = ['start', ...challenges.map(item => item.slug), 'finish'];
+const location = sequence.indexOf(page.slug);
+const previous = location > 0 ? all.find(item => item.slug === sequence[location - 1]) : undefined;
+const next = location >= 0 && location < sequence.length - 1 ? all.find(item => item.slug === sequence[location + 1]) : undefined;
+const solution = page.number ? all.find(item => item.kind === 'solution' && item.number === page.number) : undefined;
+const nextSolution = page.number ? all.find(item => item.kind === 'solution' && item.number === page.number! + 1) : undefined;
+const category = page.kind === 'challenge' ? `Challenge ${String(page.number).padStart(2, '0')}` : page.kind === 'solution' ? `Solution ${String(page.number).padStart(2, '0')} (spoilers)` : page.kind === 'reference' ? 'Reference guide' : page.kind === 'setup' ? 'Before Challenge 1' : page.kind === 'finish' ? 'Close the loop' : undefined;
+const headings = [
+  ...(page.kind === 'overview' ? [{ id: 'your-route', depth: 2, text: 'Your workshop route' }] : []),
+  ...page.headings,
+  ...(page.kind === 'about' ? [{ id: 'upstream-license', depth: 2, text: 'The original MIT notice' }] : []),
+  ...(page.kind === 'challenge' ? [{ id: 'prompt-heading', depth: 2, text: 'A prompt to start with' }] : []),
+  ...(page.step ? [{ id: 'completion-heading', depth: 2, text: page.kind === 'finish' ? 'Ready to wrap up?' : 'Ready for the next step?' }] : []),
+];
+const pageLabel = (item: WorkshopPage) => item.kind === 'challenge' ? `${item.number}. ${challengeLabels[(item.number ?? 1) - 1]}` : item.kind === 'finish' ? 'Finish & cleanup' : item.title;
+const license = page.kind === 'about' ? await upstreamLicense() : '';
+---
+<Guide title={page.kind === 'overview' ? 'Build Octocat Supply with agents' : page.title} slug={page.slug} headings={headings} step={page.step} solution={page.kind === 'solution'}>
+  {page.kind === 'overview' ? (
+    <>
+      <header class="overview-heading">
+        <p class="community-note">A hands-on guide adapted from Microsoft MicroHack</p>
+        <h1>Build Octocat Supply<br class="wide-break" /> with agents.</h1>
+        <p class="lead">Take a real full-stack app through the Agentic Software Development Lifecycle. Plan, build, test, review, deploy, and operate with GitHub Copilot. You drive; the agents help.</p>
+        <div class="button-row"><a class="button" href={withBase('start')}>Start with the setup</a><a class="button secondary" href={REPO + '/fork'}>Get your own starter</a></div>
+        <a class="hero-resume" data-resume href={withBase('start')} hidden>Resume workshop</a>
+      </header>
+      <section class="workshop-route" aria-labelledby="your-route">
+        <div class="section-intro"><h2 id="your-route">Your workshop route</h2><span>7 challenges, then cleanup</span></div>
+        <ol class="route">
+          {challenges.map(item => (
+            <li class:list={{ 'cloud-step': item.number === 5 }}>
+              {item.number === 5 && <p class="cloud-boundary">Azure access, a budget, and a cleanup plan are needed for Challenges 5–6.</p>}
+              <a href={withBase(item.slug)} data-step-link={item.step}>
+                <span class="route-number" aria-hidden="true">{String(item.number).padStart(2, '0')}</span>
+                <span><strong>{challengeLabels[(item.number ?? 1) - 1]}</strong><span class="route-summary">{challengeSummaries[(item.number ?? 1) - 1]}</span><span class="sr-only" data-step-status>Not complete</span></span>
+                <span class="route-open" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+        <p class="route-finish">Then <a href={withBase('finish')}>finish, reflect, and clean up your resources</a>.</p>
+      </section>
+      <div class="reading-content" set:html={page.html}></div>
+    </>
+  ) : (
+    <>
+      <header class="page-heading">
+        {category && <p class="page-category">{category}</p>}
+        <h1>{page.title}</h1>
+        {page.kind === 'challenge' && <p class="page-context">{(page.number ?? 0) <= 4 ? 'Work locally with your chosen API track.' : page.number === 7 ? 'Start with a low-risk task and keep human review.' : 'Use an authorized, non-production Azure environment.'}</p>}
+      </header>
+      {page.kind === 'solution' ? (
+        <>
+          <section class="spoiler-gate" data-spoiler-gate aria-labelledby="spoiler-heading">
+            <span class="spoiler-symbol" aria-hidden="true">?</span>
+            <h2 id="spoiler-heading">Try the challenge before the walkthrough.</h2>
+            <p>This page contains a worked approach, suggested pacing, and common blockers. Reveal it only when you are ready for spoilers.</p>
+            <div class="button-row"><button class="button" type="button" data-reveal-solution hidden>Reveal solution {page.number}</button><a class="button secondary" href={withBase(`challenges/${String(page.number).padStart(2, '0')}`)}>Back to the challenge</a></div>
+            <p class="small muted">This is a per-visit spoiler gate, not access control. The source is public; solutions are never included in ordinary search.</p>
+            <noscript><p><a href={repositoryUrl(page.source)}>Read the full solution on GitHub (spoilers)</a>.</p></noscript>
+          </section>
+          <div data-solution-target hidden></div>
+          <template data-solution-template>
+            <article class="reading-content solution-content" aria-label={`Solution ${page.number}`}>
+              <div class="notice">Worked approach revealed. <a href={withBase(`challenges/${String(page.number).padStart(2, '0')}`)}>Return to the challenge</a> when you are ready to continue.</div>
+              <div set:html={page.html}></div>
+              <nav class="page-pagination" aria-label="Solutions">
+                <a href={withBase(`challenges/${String(page.number).padStart(2, '0')}`)}><small>Back to the exercise</small>Challenge {page.number}</a>
+                {nextSolution && <a href={withBase(nextSolution.slug)}><small>Next worked approach (spoilers)</small>Solution {nextSolution.number}</a>}
+              </nav>
+            </article>
+          </template>
+        </>
+      ) : (
+        <>
+          <article class="reading-content" set:html={page.html}></article>
+          {page.kind === 'about' && <section class="reading-content license-section" aria-labelledby="upstream-license"><h2 id="upstream-license">The original MIT notice</h2><pre class="license-text">{license}</pre></section>}
+          {page.kind === 'challenge' && page.number && (
+            <section class="starter-prompt" aria-labelledby="prompt-heading">
+              <h2 id="prompt-heading">A prompt to start with</h2>
+              <p>Adapt this to your chosen API track and actual environment. It starts a conversation; it does not complete the challenge for you.</p>
+              <pre data-copy-label={`Copy Challenge ${page.number} starter prompt`}><code>{starterPrompts[page.number - 1]}</code></pre>
+            </section>
+          )}
+          {page.step && (
+            <section class="completion-panel" aria-labelledby="completion-heading">
+              <div class="completion-icon" aria-hidden="true">✓</div>
+              <div><h2 id="completion-heading">{page.kind === 'finish' ? 'Ready to wrap up?' : 'Ready for the next step?'}</h2>
+                <p>Demonstrate each success criterion above and check it off. Completion is your assessment, not an automated test of your code.</p>
+                <p class="completion-status" data-criteria-status>Check all {page.criteria.length} success criteria before marking complete.</p>
+                <button class="button" type="button" data-complete disabled hidden>Mark challenge complete</button>
+              </div>
+            </section>
+          )}
+          {page.kind === 'challenge' && solution && <p class="solution-link">Need a worked approach? <a href={withBase(solution.slug)}>Open solution {page.number} (spoilers)</a>. You will choose whether to reveal it.</p>}
+          {(previous || next) && <nav class="page-pagination" aria-label="Challenge sequence">
+            {previous ? <a rel="prev" href={withBase(previous.slug)}><small>Previous</small>{pageLabel(previous)}</a> : <a href={BASE}><small>Previous</small>Workshop overview</a>}
+            {next && <a rel="next" href={withBase(next.slug)}><small>Next</small>{pageLabel(next)}</a>}
+          </nav>}
+        </>
+      )}
+    </>
+  )}
+  <div class="source-note"><a href={repositoryUrl(page.source)}>View this page's Markdown</a><span>Learning content is pinned to the <a href={withBase('about')}>credited upstream import</a>.</span></div>
+</Guide>

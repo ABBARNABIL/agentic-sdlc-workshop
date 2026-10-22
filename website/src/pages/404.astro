@@ -1,0 +1,9 @@
+---
+import Guide from '../layouts/Guide.astro';
+import { withBase } from '../lib/site';
+---
+<Guide title="Page not found" slug="404">
+  <header class="page-heading"><p class="page-category">Page not found</p><h1>This route is not in the workshop.</h1></header>
+  <p>The page may have moved, or the link may be incomplete. Your saved progress is still in this browser.</p>
+  <div class="button-row"><a class="button" href={withBase()}>Open the workshop overview</a><a class="button secondary" href={withBase('resources')}>Browse resources</a></div>
+</Guide>

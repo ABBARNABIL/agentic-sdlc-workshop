@@ -1,0 +1,130 @@
+---
+import '@fontsource/atkinson-hyperlegible/400.css';
+import '@fontsource/atkinson-hyperlegible/700.css';
+import '../styles/guide.css';
+import { getPages } from '../lib/content';
+import type { Heading } from '../lib/content';
+import { BASE, REPO, SITE, challengeLabels, withBase } from '../lib/site';
+import SectionLinks from '../components/SectionLinks.astro';
+
+interface Props {
+  title: string;
+  slug: string;
+  headings?: Heading[];
+  step?: string;
+  solution?: boolean;
+  description?: string;
+}
+const { title, slug, headings = [], step, solution = false, description = 'A hands-on Agentic SDLC workshop with GitHub Copilot, a real full-stack starter, and Azure. Complete challenges, not just pages.' } = Astro.props;
+const pages = await getPages();
+const steps = pages.filter(page => page.step).sort((a, b) => (a.number ?? 8) - (b.number ?? 8));
+const config = steps.map(page => ({ id: page.step, slug: page.slug, criteria: page.criteria.map(item => item.id) }));
+const canonical = slug === '404' ? `${SITE}${BASE}404.html` : `${SITE}${withBase(slug)}`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#F7F9FD" />
+    {(solution || slug === '404') && <meta name="robots" content="noindex, nofollow" />}
+    <title>{title} | Agentic SDLC workshop</title>
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={`${BASE}favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body data-current-step={step}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href={BASE} aria-label="Agentic SDLC workshop home">
+        <svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 9h19v18H8V9Z" stroke="currentColor" stroke-width="1.7" stroke-dasharray="3 3" /><circle cx="8" cy="9" r="4" fill="#315EE8" /><circle cx="27" cy="9" r="4" fill="#087F83" /><circle cx="27" cy="27" r="4" fill="#315EE8" /><circle cx="8" cy="27" r="4" fill="#17243A" /></svg>
+        <span>Agentic SDLC<small>Workshop guide</small></span>
+      </a>
+      <nav class="header-links" aria-label="Guide">
+        <a href={withBase('resources')} aria-current={slug === 'resources' ? 'page' : undefined}>Resources</a>
+        <a href={withBase('about')} aria-current={slug === 'about' ? 'page' : undefined}>About</a>
+        <a class="repo-link" href={REPO}>Repository <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="search-open" type="button" data-search-open hidden>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6" /><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.6" /></svg>
+        Search <kbd>/</kbd>
+      </button>
+    </header>
+    <div class="guide-grid">
+      <aside class="workshop-rail">
+        <details open data-responsive-details>
+          <summary>Workshop navigation</summary>
+          <div class="rail-inner">
+            <p class="rail-title">Your workshop</p>
+            <nav aria-label="Workshop">
+              <a class="rail-overview" href={BASE} aria-current={!slug ? 'page' : undefined}>Overview</a>
+              <a class="rail-start" href={withBase('start')} aria-current={slug === 'start' ? 'page' : undefined}><span aria-hidden="true">↳</span> Start here</a>
+              <ol class="challenge-nav">
+                {steps.map(page => (
+                  <li>
+                    <a href={withBase(page.slug)} data-step-link={page.step} aria-current={slug === page.slug ? 'page' : undefined}>
+                      <span class="step-number" aria-hidden="true">{page.number ? String(page.number).padStart(2, '0') : '✓'}</span>
+                      <span>{page.number ? challengeLabels[page.number - 1] : 'Finish & cleanup'}<span class="sr-only"> — <span data-step-status>Not complete</span></span></span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+            <div class="rail-progress">
+              <p data-progress-summary>0 of 8 steps complete</p>
+              <progress value="0" max="8" data-progress-meter aria-label="Workshop completion">0 of 8</progress>
+              <p class="small muted" data-storage-explanation>Saved only in this browser.<br />Check the criteria, then mark complete.</p>
+              <a class="resume-link" data-resume href={withBase('start')} hidden>Resume workshop</a>
+              <button class="text-button" type="button" data-reset hidden>Reset progress</button>
+            </div>
+          </div>
+        </details>
+      </aside>
+      <main id="main" tabindex="-1">
+        <div class="storage-notice notice" data-storage-notice role="status" hidden></div>
+        <noscript><p class="notice">All challenge text is readable without JavaScript. Progress, search, copy buttons, and on-site solution reveals need JavaScript. Full solutions are also available as public Markdown.</p></noscript>
+        <slot />
+      </main>
+      <aside class="page-rail">
+        <details open data-responsive-details>
+          <summary>On this page</summary>
+          <div class="page-rail-inner">
+            <p class="rail-title">On this page</p>
+            <div data-toc-target>
+              {solution ? <p class="small muted">Sections appear after you choose to reveal the solution.</p> : <SectionLinks headings={headings} />}
+            </div>
+            {solution && <template data-solution-toc><SectionLinks headings={headings} /></template>}
+            <div class="rail-help">
+              <p>Working with your team?</p>
+              <a href={withBase('resources')}>Find the starter files</a>
+              <a href={withBase('finish') + '#clean-up-your-workshop-resources'}>Review cleanup</a>
+            </div>
+          </div>
+        </details>
+      </aside>
+      <footer class="site-footer">
+        <p>Adapted from <a href="https://github.com/microsoft/MicroHack/tree/ee974780023dbc9670817a639e1d8e8fa840a6c6/03-Azure/01-04-AI/01_Agentic_SDLC">Microsoft MicroHack</a>. Original workshop by <a href="https://github.com/Frank802">Francesco Lana</a>.</p>
+        <p>Community edition, not an official Microsoft site. <a href={withBase('about')}>Source & MIT notices</a>. No analytics or account required.</p>
+      </footer>
+    </div>
+    <p class="sr-only" aria-live="polite" aria-atomic="true" data-announcement></p>
+    <dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
+      <div class="dialog-heading"><h2 id="search-title">Search the workshop</h2><button type="button" class="quiet-button" data-search-close aria-label="Close search">Close <kbd>Esc</kbd></button></div>
+      <label class="sr-only" for="workshop-search">Search challenges and reference material</label>
+      <input id="workshop-search" type="search" data-search-input placeholder="Try cart, OIDC, or SQLite…" autocomplete="off" spellcheck="false" aria-describedby="search-status" />
+      <p class="small muted" id="search-status" data-search-status role="status">Solutions are not included.</p>
+      <button type="button" class="button secondary" data-search-retry hidden>Retry loading search</button>
+      <ol class="search-results" data-search-results></ol>
+      <p class="search-footnote small">Search runs in your browser against the guide. It does not query GitHub or an AI service.</p>
+    </dialog>
+    <dialog class="reset-dialog" data-reset-dialog aria-labelledby="reset-title" aria-describedby="reset-description">
+      <h2 id="reset-title">Reset your workshop progress?</h2>
+      <p id="reset-description">This removes saved success criteria, completion marks, and the resume location in this browser. It does not change your repository or Azure resources.</p>
+      <div class="button-row"><button type="button" class="button secondary" data-reset-cancel autofocus>Keep progress</button><button type="button" class="button" data-reset-confirm>Reset progress</button></div>
+    </dialog>
+    <script type="application/json" data-workshop-config set:html={JSON.stringify(config)}></script>
+    <script>
+      import '../scripts/client';
+    </script>
+  </body>
+</html>

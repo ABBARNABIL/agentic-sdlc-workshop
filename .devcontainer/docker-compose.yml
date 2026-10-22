@@ -1,0 +1,17 @@
+# Docker Compose File for Application Container with Docker bindings
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+
+    ports:
+      - "3000:3000"
+      - "5137:5137"
+
+    volumes:
+      - ..:/workspaces/octocat-supply-hack:cached
+
+    environment:
+      - NODE_ENV=development
