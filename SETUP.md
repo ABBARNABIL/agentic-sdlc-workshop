@@ -106,6 +106,8 @@ Read the [finish and cleanup checklist](challenges/finish.md#clean-up-your-works
 
 ## How progress and solutions work
 
+Use **Theme** in the header to choose **System**, **Light**, or **Dark**. System follows your device's color scheme. Your choice stays in this browser, separately from workshop progress; resetting progress does not reset the theme. If browser storage is blocked, theme changes apply only to the current page and the guide tells you they were not saved.
+
 Check success criteria only after you have demonstrated them, then mark the challenge complete. Progress and the resume location stay in **this browser on this device**, using local storage; there is no account, backend, analytics, or cross-device sync. Private browsing, clearing site data, or blocked storage can erase progress. The interface reports storage failures instead of claiming it saved.
 
 Solution pages require an explicit **Reveal solution** action on every visit and are excluded from search. This is a spoiler boundary, not access control: their source is public. The full learning material remains in Markdown in the repository.

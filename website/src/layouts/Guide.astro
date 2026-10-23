@@ -5,6 +5,7 @@ import '../styles/guide.css';
 import { getPages } from '../lib/content';
 import type { Heading } from '../lib/content';
 import { BASE, REPO, SITE, challengeLabels, withBase } from '../lib/site';
+import { bootstrapTheme, THEME_STORAGE_KEY } from '../lib/theme';
 import SectionLinks from '../components/SectionLinks.astro';
 
 interface Props {
@@ -27,7 +28,10 @@ const canonical = slug === '404' ? `${SITE}${BASE}404.html` : `${SITE}${withBase
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#F7F9FD" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F7F9FD" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101827" media="(prefers-color-scheme: dark)" />
+    <script is:inline data-theme-init set:html={`(${bootstrapTheme.toString()})(${JSON.stringify(THEME_STORAGE_KEY)});`}></script>
     {(solution || slug === '404') && <meta name="robots" content="noindex, nofollow" />}
     <title>{title} | Agentic SDLC workshop</title>
     <link rel="canonical" href={canonical} />
@@ -37,7 +41,7 @@ const canonical = slug === '404' ? `${SITE}${BASE}404.html` : `${SITE}${withBase
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="brand" href={BASE} aria-label="Agentic SDLC workshop home">
-        <svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 9h19v18H8V9Z" stroke="currentColor" stroke-width="1.7" stroke-dasharray="3 3" /><circle cx="8" cy="9" r="4" fill="#315EE8" /><circle cx="27" cy="9" r="4" fill="#087F83" /><circle cx="27" cy="27" r="4" fill="#315EE8" /><circle cx="8" cy="27" r="4" fill="#17243A" /></svg>
+        <svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 9h19v18H8V9Z" stroke="currentColor" stroke-width="1.7" stroke-dasharray="3 3" /><circle cx="8" cy="9" r="4" fill="var(--cobalt)" /><circle cx="27" cy="9" r="4" fill="var(--teal)" /><circle cx="27" cy="27" r="4" fill="var(--cobalt)" /><circle cx="8" cy="27" r="4" fill="currentColor" /></svg>
         <span>Agentic SDLC<small>Workshop guide</small></span>
       </a>
       <nav class="header-links" aria-label="Guide">
@@ -45,9 +49,17 @@ const canonical = slug === '404' ? `${SITE}${BASE}404.html` : `${SITE}${withBase
         <a href={withBase('about')} aria-current={slug === 'about' ? 'page' : undefined}>About</a>
         <a class="repo-link" href={REPO}>Repository <span aria-hidden="true">↗</span></a>
       </nav>
-      <button class="search-open" type="button" data-search-open hidden>
+      <div class="theme-control" data-theme-control hidden>
+        <label for="color-theme">Theme</label>
+        <select id="color-theme" aria-label="Color theme" data-theme-select>
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+      <button class="search-open" type="button" data-search-open aria-label="Search workshop" title="Search workshop" hidden>
         <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6" /><path d="m13 13 4 4" stroke="currentColor" stroke-width="1.6" /></svg>
-        Search <kbd>/</kbd>
+        <span class="search-label">Search</span> <kbd>/</kbd>
       </button>
     </header>
     <div class="guide-grid">
@@ -70,6 +82,10 @@ const canonical = slug === '404' ? `${SITE}${BASE}404.html` : `${SITE}${withBase
                 ))}
               </ol>
             </nav>
+            <nav class="rail-utilities" aria-label="Guide resources">
+              <a href={withBase('resources')}>Resources</a>
+              <a href={withBase('about')}>Source & licensing</a>
+            </nav>
             <div class="rail-progress">
               <p data-progress-summary>0 of 8 steps complete</p>
               <progress value="0" max="8" data-progress-meter aria-label="Workshop completion">0 of 8</progress>
@@ -81,8 +97,9 @@ const canonical = slug === '404' ? `${SITE}${BASE}404.html` : `${SITE}${withBase
         </details>
       </aside>
       <main id="main" tabindex="-1">
+        <div class="theme-notice storage-notice notice" data-theme-notice role="status" hidden></div>
         <div class="storage-notice notice" data-storage-notice role="status" hidden></div>
-        <noscript><p class="notice">All challenge text is readable without JavaScript. Progress, search, copy buttons, and on-site solution reveals need JavaScript. Full solutions are also available as public Markdown.</p></noscript>
+        <noscript><p class="notice">All challenge text is readable without JavaScript, and the color theme follows your device setting. Manual theme selection, progress, search, copy buttons, and on-site solution reveals need JavaScript. Full solutions are also available as public Markdown.</p></noscript>
         <slot />
       </main>
       <aside class="page-rail">

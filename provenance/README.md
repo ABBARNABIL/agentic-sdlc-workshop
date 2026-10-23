@@ -34,7 +34,7 @@ The application, four API tracks, shared SQL, assets, backlog, fictional WorkIQ 
 * Default npm installs use the imported lockfiles. Documentation clarifies working directories, the default TypeScript-only install, Java 17, private port forwarding, and separate guide/app commands.
 * LF checkout rules preserve the imported text blob identities on Windows as well as Linux.
 * Cost and permission notices precede the Azure exercises; the finish page adds a resource, identity, automation, and Codespaces cleanup checklist.
-* The website adds ordered navigation, section links, copy buttons, local progress/resume, static search that excludes solutions, and explicit per-visit solution reveals. The original instructional prose, success criteria, optional stretches, resources, tables, code, and diagrams are retained.
+* The website adds ordered navigation, section links, copy buttons, local progress/resume, light/dark/system themes, static search that excludes solutions, and explicit per-visit solution reveals. Theme preferences are browser-local and diagrams follow the selected color scheme. The original instructional prose, success criteria, optional stretches, resources, tables, code, and diagrams are retained.
 
 ## Refresh safely
 

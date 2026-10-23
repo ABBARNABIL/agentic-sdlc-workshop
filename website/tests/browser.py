@@ -10,6 +10,7 @@ from playwright.sync_api import expect, sync_playwright
 
 
 STORAGE_KEY = "agentic-sdlc-workshop:progress:v1"
+THEME_KEY = "agentic-sdlc-workshop:theme:v1"
 COUNTS = [3, 4, 4, 3, 4, 4, 4]
 
 
@@ -20,6 +21,7 @@ def main():
     parser.add_argument("--app-url", default=None)
     parser.add_argument("--smoke", action="store_true")
     parser.add_argument("--only", help="Run only flow names containing this text")
+    parser.add_argument("--color-scheme", choices=["light", "dark"], default="light")
     args = parser.parse_args()
     base = args.base_url.rstrip("/") + "/"
     artifacts = Path(args.artifacts)
@@ -30,7 +32,7 @@ def main():
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
-        context = browser.new_context(viewport={"width": 1440, "height": 1000}, reduced_motion="reduce")
+        context = browser.new_context(viewport={"width": 1440, "height": 1000}, reduced_motion="reduce", color_scheme=args.color_scheme)
         page = context.new_page()
         page.on("pageerror", lambda error: errors.append(str(error)))
         page.on("response", lambda response: failed_responses.append(f"{response.status} {response.url}")
@@ -62,6 +64,125 @@ def main():
             assert page.locator(".diagram").count() >= 1
             page.screenshot(path=str(artifacts / "overview-desktop.png"), full_page=False)
             assert not errors, errors
+
+        def theme_preferences():
+            page.emulate_media(color_scheme="light")
+            go("challenges/01/")
+            select = page.get_by_role("combobox", name="Color theme")
+            expect(select).to_have_value("system")
+            expect(page.locator("html")).to_have_attribute("data-theme", "light")
+            select.select_option("dark")
+            expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+            assert page.evaluate(f"localStorage.getItem({json.dumps(THEME_KEY)})") == "dark"
+            assert page.locator("main").evaluate("(el) => getComputedStyle(el).backgroundColor") == "rgb(23, 36, 58)"
+            assert page.locator("blockquote").first.evaluate("(el) => getComputedStyle(el).backgroundColor") == "rgb(27, 51, 69)"
+            assert page.locator(".code-block").first.evaluate("(el) => getComputedStyle(el).backgroundColor") == "rgb(12, 21, 36)"
+            page.screenshot(path=str(artifacts / "challenge-dark.png"), full_page=False)
+            page.locator("[data-criterion]").first.check()
+            page.get_by_role("button", name="Reset progress", exact=True).click()
+            page.locator("[data-reset-confirm]").click()
+            expect(select).to_have_value("dark")
+            assert page.evaluate(f"localStorage.getItem({json.dumps(THEME_KEY)})") == "dark"
+            go()
+            expect(page.get_by_role("combobox", name="Color theme")).to_have_value("dark")
+            expect(page.locator(".diagram-drawing[data-theme=dark] svg")).to_have_count(1, timeout=30000)
+            page.screenshot(path=str(artifacts / "overview-dark.png"), full_page=False)
+            page.reload(wait_until="networkidle")
+            expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+            sibling = context.new_page()
+            sibling.goto(base + "start/", wait_until="networkidle")
+            sibling.get_by_role("combobox", name="Color theme").select_option("light")
+            expect(page.locator("html")).to_have_attribute("data-theme", "light")
+            expect(page.get_by_role("combobox", name="Color theme")).to_have_value("light")
+            sibling.close()
+            page.get_by_role("combobox", name="Color theme").select_option("system")
+            page.emulate_media(color_scheme="dark")
+            expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+            page.get_by_role("combobox", name="Color theme").select_option("light")
+            expect(page.locator("html")).to_have_attribute("data-theme", "light")
+            page.emulate_media(color_scheme="light")
+            page.emulate_media(color_scheme="dark")
+            expect(page.locator("html")).to_have_attribute("data-theme", "light")
+            select = page.get_by_role("combobox", name="Color theme")
+            select.focus()
+            page.keyboard.press("End")
+            expect(select).to_have_value("dark")
+            expect(select).to_be_focused()
+            page.keyboard.press("Home")
+            expect(select).to_have_value("system")
+            expect(page.locator("html")).to_have_attribute("data-theme", "dark")
+            page.emulate_media(color_scheme=args.color_scheme)
+
+        def theme_diagrams_and_surfaces():
+            go("reference/src/docs/architecture/")
+            select = page.get_by_role("combobox", name="Color theme")
+            expect(page.locator(".diagram-drawing > svg")).to_have_count(2, timeout=30000)
+            assert page.locator(".diagram svg g").first.evaluate("(el) => getComputedStyle(el).transitionDuration") == "0s"
+            original_geometry = page.locator(".diagram-drawing > svg").evaluate_all("nodes => nodes.map(svg => svg.getAttribute('viewBox'))")
+            for choice in ["dark", "light", "dark", "light", "dark"]:
+                select.select_option(choice)
+            expect(page.locator(".diagram-drawing[data-theme=dark][aria-busy=false] svg")).to_have_count(2, timeout=30000)
+            updated_geometry = page.locator(".diagram-drawing > svg").evaluate_all("nodes => nodes.map(svg => svg.getAttribute('viewBox'))")
+            assert updated_geometry == original_geometry, f"Changing colors must not distort diagram geometry: {original_geometry} -> {updated_geometry}"
+            assert page.locator(".diagram svg text, .diagram svg .nodeLabel").evaluate_all("nodes => nodes.every(node => node.getBoundingClientRect().height >= 10)"), "Diagram labels must remain readable rather than shrinking into a huge viewBox"
+            expect(page.locator(".diagram")).to_have_count(2)
+            expect(page.locator(".diagram .code-toolbar button")).to_have_count(2)
+            page.screenshot(path=str(artifacts / "diagrams-dark.png"), full_page=True)
+            page.locator("[data-search-open]").click()
+            page.locator("[data-search-input]").fill("OIDC")
+            expect(page.locator("[data-search-results] a").first).to_be_visible()
+            assert page.locator("[data-search-dialog]").evaluate("(el) => getComputedStyle(el).backgroundColor") == "rgb(23, 36, 58)"
+            page.screenshot(path=str(artifacts / "search-dark.png"), full_page=False)
+            page.locator("[data-search-close]").click()
+            page.set_viewport_size({"width": 320, "height": 900})
+            go("challenges/01/")
+            expect(page.get_by_role("combobox", name="Color theme")).to_be_visible()
+            assert not page.evaluate("document.documentElement.scrollWidth > window.innerWidth + 1")
+            nav = page.locator(".workshop-rail > details")
+            nav.locator("summary").click()
+            expect(nav.get_by_role("link", name="Resources", exact=True)).to_be_visible()
+            nav.locator("summary").click()
+            page.screenshot(path=str(artifacts / "challenge-dark-mobile.png"), full_page=False)
+            page.set_viewport_size({"width": 1440, "height": 1000})
+            page.get_by_role("combobox", name="Color theme").select_option("system")
+
+        def theme_first_paint_and_failures():
+            isolated = browser.new_context(color_scheme="light")
+            isolated.add_init_script(f"localStorage.setItem({json.dumps(THEME_KEY)}, 'dark')")
+            other = isolated.new_page()
+            other.route("**/_astro/*.js", lambda route: route.abort())
+            other.goto(base + "challenges/01/", wait_until="networkidle")
+            expect(other.locator("html")).to_have_attribute("data-theme", "dark")
+            assert other.locator("main").evaluate("(el) => getComputedStyle(el).backgroundColor") == "rgb(23, 36, 58)"
+            expect(other.locator("[data-theme-control]")).to_be_hidden()
+            isolated.close()
+            cases = [
+                ("Object.defineProperty(window, 'localStorage', {get(){throw new DOMException('Blocked', 'SecurityError')}})", "could not be saved or read"),
+                ("Storage.prototype.setItem = function(){throw new DOMException('Full', 'QuotaExceededError')}", "could not be saved or read"),
+                (f"localStorage.setItem({json.dumps(THEME_KEY)}, 'invalid')", "not recognized"),
+            ]
+            for script, message in cases:
+                isolated = browser.new_context(color_scheme="light")
+                isolated.add_init_script(script)
+                other = isolated.new_page()
+                other.goto(base + "challenges/01/", wait_until="networkidle")
+                select = other.get_by_role("combobox", name="Color theme")
+                if message == "not recognized":
+                    expect(other.locator("[data-theme-notice]")).to_contain_text(message)
+                    select.select_option("dark")
+                    expect(other.locator("[data-theme-notice]")).to_be_hidden()
+                else:
+                    select.select_option("dark")
+                    expect(other.locator("[data-theme-notice]")).to_contain_text(message)
+                    expect(other.locator("[data-announcement]")).to_contain_text("not saved")
+                expect(other.locator("html")).to_have_attribute("data-theme", "dark")
+                isolated.close()
+            isolated = browser.new_context(java_script_enabled=False, color_scheme="dark")
+            other = isolated.new_page()
+            other.goto(base + "challenges/01/", wait_until="networkidle")
+            assert other.locator("main").evaluate("(el) => getComputedStyle(el).backgroundColor") == "rgb(23, 36, 58)"
+            expect(other.get_by_role("heading", name="Goal", exact=True)).to_be_visible()
+            isolated.close()
 
         def challenges_and_finish():
             for number, count in enumerate(COUNTS, 1):
@@ -285,6 +406,9 @@ def main():
 
         try:
             run("overview, connected route, and Mermaid", overview)
+            run("theme preferences, system changes, keyboard, persistence, and reset independence", theme_preferences)
+            run("theme-aware diagrams, dialogs, and mobile controls", theme_diagrams_and_surfaces)
+            run("theme first paint, no-JavaScript appearance, and honest storage failures", theme_first_paint_and_failures)
             run("all seven challenges and cleanup deep links", challenges_and_finish)
             run("all seven explicit per-visit solution gates", solutions)
             run("static search excludes all solutions", search)

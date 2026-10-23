@@ -4,7 +4,9 @@
 
 A guided, self-paced community adaptation of Microsoft's **Agentic SDLC MicroHack**. Use GitHub Copilot to take the Octocat Supply app through seven complete challenges: environment setup, cart implementation, a backlog feature, tests and review, Azure deployment, SRE operations, and agentic maintenance.
 
-The guide adds ordered navigation, a connected workshop route, on-page sections, copyable commands/prompts, browser-local success checklists and resume, static search, and explicit per-visit solution spoilers. Reading needs no account or backend. There is no site telemetry or cross-device progress service.
+The guide adds ordered navigation, a connected workshop route, on-page sections, copyable commands/prompts, browser-local success checklists and resume, light/dark/system appearance, static search, and explicit per-visit solution spoilers. Reading needs no account or backend. There is no site telemetry or cross-device progress service.
+
+Use **Theme** in the header to choose **System**, **Light**, or **Dark**. System follows your device; an explicit choice is saved locally across pages and visits, separately from workshop progress. Colors are applied before the first paint, diagrams update with the theme, and blocked storage is reported instead of claiming a preference was saved. Without JavaScript, the guide still follows your device's color scheme.
 
 ## For participants
 
@@ -62,7 +64,7 @@ With the preview running, in a second terminal in `website/`:
 python tests/browser.py --base-url http://localhost:4321/agentic-sdlc-workshop/
 ```
 
-Screenshots are written to ignored `test-results/`. The suite checks every challenge and solution, explicit spoiler reveals, copy success/failure, persisted criteria and completion, resume/reset, storage failures, search and fetch failures, keyboard/mobile navigation, Mermaid, no-JavaScript reading, deep links, and horizontal overflow. `--base-url` can also target the deployed site. The exercise app has its own tests under `src/`; the site suite does not run Azure scripts.
+Screenshots are written to ignored `test-results/`. The suite checks every challenge and solution, explicit spoiler reveals, copy success/failure, persisted criteria and completion, resume/reset, storage failures, search and fetch failures, keyboard/mobile navigation, light/dark/system themes and first-paint preference, Mermaid, no-JavaScript reading, deep links, and horizontal overflow. `--base-url` can also target the deployed site. The exercise app has its own tests under `src/`; the site suite does not run Azure scripts.
 
 Astro's preview command may run as a background server. Stop it after checking with `npx astro preview stop` from `website/`.
 
